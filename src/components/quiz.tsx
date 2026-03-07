@@ -123,11 +123,23 @@ export function Quiz({ onShowScores }: { onShowScores: () => void }) {
     }
   }, [modalOpen, saving, isConnected]);
 
-  const handleSignInAndSave = () => {
+  const handleSignInAndSave = async () => {
     pendingSaveRef.current = true;
     setSaving(true);
-    // Open the ConnectKit modal so the user can connect their wallet
-    setOpen(true);
+    if (isConnected && !isAuthenticated) {
+      // Wallet connected but not signed in — trigger SIWE directly
+      try {
+        await signIn();
+        // Token will update via context, useEffect will handle the save
+      } catch {
+        pendingSaveRef.current = false;
+        setSaving(false);
+      }
+    } else if (!isConnected) {
+      // Not connected — open ConnectKit modal
+      // Auto sign-in on connect will set token, useEffect handles save
+      setOpen(true);
+    }
   };
 
   if (phase === "start") {

@@ -26,7 +26,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [token, setToken] = useState<string | null>(null);
   const { address, isConnected } = useAccount();
   const { signMessageAsync } = useSignMessage();
-  const attemptedRef = useRef<string | null>(null);
+  const autoAttemptedRef = useRef<string | null>(null);
 
   // Load token from localStorage on mount
   useEffect(() => {
@@ -41,7 +41,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!isConnected) {
       setToken(null);
-      attemptedRef.current = null;
+      autoAttemptedRef.current = null;
       localStorage.removeItem("auth-token");
       localStorage.removeItem("auth-wallet");
     }
@@ -80,13 +80,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Auto sign-in when wallet connects (connect = sign in)
   useEffect(() => {
     if (!isConnected || !address || token) return;
-    // Check if we already have a stored token for this wallet
     const stored = localStorage.getItem("auth-token");
     const storedWallet = localStorage.getItem("auth-wallet");
     if (stored && storedWallet === address.toLowerCase()) return;
-    // Don't re-attempt for the same address if user rejected
-    if (attemptedRef.current === address) return;
-    attemptedRef.current = address;
+    // Only auto-attempt once per address per session
+    if (autoAttemptedRef.current === address) return;
+    autoAttemptedRef.current = address;
     signIn().catch(() => {});
   }, [isConnected, address, token, signIn]);
 
