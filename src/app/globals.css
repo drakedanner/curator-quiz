@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: 'Satoshi'; font-weight: 400; src: local('Satoshi'); }
+@font-face { font-family: 'Satoshi'; font-weight: 700; src: local('Satoshi Bold'); }
+@font-face { font-family: 'Satoshi'; font-weight: 900; src: local('Satoshi Black'); }
+
+::selection {
+  background: #D2F38A;
+  color: #385842;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}

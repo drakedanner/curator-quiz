@@ -1,0 +1,59 @@
+name: Weekly Data Update
+
+on:
+  schedule:
+    - cron: "0 9 * * 1" # Every Monday at 9am UTC
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run data updater
+        run: node scripts/update-data.mjs --apply
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create PR with updates
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="auto/data-update-$(date +%Y-%m-%d)"
+          git checkout -b "$BRANCH"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json extra-questions.json scripts/last-update.txt
+          git commit -m "chore: weekly data update $(date +%Y-%m-%d)
+
+          Automated update from DefiLlama.
+          Review changes before merging to verify accuracy."
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "Weekly data update — $(date +%Y-%m-%d)" \
+            --body "$(cat <<'EOF'
+          ## Automated Data Refresh
+
+          Updated market caps, supply figures, and yield rates from DefiLlama.
+
+          Please review the diff to verify numbers look reasonable before merging.
+          EOF
+          )" \
+            --base main
