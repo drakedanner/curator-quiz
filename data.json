@@ -13,7 +13,7 @@
       "curatorUsage": "Primary loan asset across all major curators",
       "status": "active",
       "keyFact": "Monthly attestations by Deloitte. Deepest liquidity of any stablecoin in DeFi lending.",
-      "marketCap": "~$33B",
+      "marketCap": "~$74B",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -39,13 +39,13 @@
       "yieldSource": null,
       "curatorUsage": "Primary on L2s. Gauntlet absorbed $775M USDT supply during Stream crisis",
       "status": "active",
-      "keyFact": "Largest stablecoin by market cap (~$140B). Quarterly attestations only (not full audits).",
-      "marketCap": "~$140B",
+      "keyFact": "Largest stablecoin by market cap (~$183B). Quarterly attestations only (not full audits).",
+      "marketCap": "~$183B",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
       "isWrapper": false,
-      "regulation": "Not regulated by any major jurisdiction \u2014 ongoing controversy",
+      "regulation": "Not regulated by any major jurisdiction — ongoing controversy",
       "tags": [
         "fiat-backed",
         "largest-market-cap",
@@ -72,7 +72,7 @@
       "collapsed": false,
       "hasYield": false,
       "isWrapper": false,
-      "regulation": "Decentralized \u2014 no regulatory license",
+      "regulation": "Decentralized — no regulatory license",
       "tags": [
         "overcollateralized",
         "decentralized",
@@ -86,15 +86,15 @@
       "issuer": "Sky Protocol",
       "type": "Crypto + RWA-backed",
       "category": "stablecoin",
-      "backing": "ETH, RWAs, Treasuries \u2014 same engine as DAI but expanded",
+      "backing": "ETH, RWAs, Treasuries — same engine as DAI but expanded",
       "backingShort": "crypto and real-world assets (same engine as DAI)",
       "riskTier": "LOW",
       "yield": "Via sUSDS (Sky Savings Rate)",
       "yieldSource": "protocol revenue via Sky Savings Rate",
-      "curatorUsage": "Growing \u2014 Sky curates its own Morpho vaults",
+      "curatorUsage": "Growing — Sky curates its own Morpho vaults",
       "status": "active",
       "keyFact": "Replacement for DAI. Sky Protocol is the MakerDAO rebrand. Top 3 stablecoin by market cap.",
-      "marketCap": "Top 3",
+      "marketCap": "~$7B",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -116,7 +116,7 @@
       "backing": "Staked USDS in Sky Savings Rate module",
       "backingShort": "staked USDS",
       "riskTier": "LOW",
-      "yield": "Variable \u2014 from Sky protocol revenue",
+      "yield": "Variable — from Sky protocol revenue",
       "yieldSource": "borrower interest and RWA yield from Sky Protocol",
       "curatorUsage": "Used as collateral in Morpho markets",
       "status": "active",
@@ -146,8 +146,8 @@
       "yieldSource": "perpetual funding rates + ETH staking rewards",
       "curatorUsage": "Very widely used as collateral. Spark allocated $1.1B to it",
       "status": "active",
-      "keyFact": "Not backed by dollars at all \u2014 backed by a derivatives position. Funding rates can go negative in bear markets.",
-      "marketCap": "~$6B+",
+      "keyFact": "Not backed by dollars at all — backed by a derivatives position. Funding rates can go negative in bear markets.",
+      "marketCap": "~$4B",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -170,7 +170,7 @@
       "backing": "Staked USDe",
       "backingShort": "staked USDe",
       "riskTier": "MEDIUM",
-      "yield": "Variable \u2014 from funding rates + staking",
+      "yield": "Variable — from funding rates + staking",
       "yieldSource": "perpetual futures funding rates + ETH staking rewards",
       "curatorUsage": "Popular collateral in Morpho and Aave markets",
       "status": "active",
@@ -200,8 +200,8 @@
       "yieldSource": "T-Bill yield distributed via staking",
       "curatorUsage": "Used in Morpho markets with 'unliquidable' market at 96.5% LLTV",
       "status": "active",
-      "keyFact": "Backed by T-Bills but governance risk is real \u2014 Usual changed USD0++ redemption rules, causing a depeg in Jan 2025.",
-      "marketCap": "Growing",
+      "keyFact": "Backed by T-Bills but governance risk is real — Usual changed USD0++ redemption rules, causing a depeg in Jan 2025.",
+      "marketCap": "~$549M",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -228,7 +228,7 @@
       "curatorUsage": "Re7 curates a vault for it on Morpho",
       "status": "active",
       "keyFact": "Trump-linked stablecoin. Crossed $3B market cap. Solid Treasury backing but carries political/reputational risk.",
-      "marketCap": "$3.4B+",
+      "marketCap": "~$4B",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -255,13 +255,13 @@
       "yieldSource": "Treasury yield passed through to holders",
       "curatorUsage": "Used as collateral in DeFi lending. Ondo also backs Usual's USD0",
       "status": "active",
-      "keyFact": "Ankura Trust acts as collateral agent \u2014 if Ondo defaults, Ankura liquidates to repay holders.",
-      "marketCap": "Growing",
+      "keyFact": "Ankura Trust acts as collateral agent — if Ondo defaults, Ankura liquidates to repay holders.",
+      "marketCap": "~$2B",
       "peg": "USD (appreciating)",
       "collapsed": false,
       "hasYield": true,
       "isWrapper": false,
-      "regulation": "Licensed \u2014 Ankura Trust as verification/collateral agent",
+      "regulation": "Licensed — Ankura Trust as verification/collateral agent",
       "tags": [
         "rwa-backed",
         "treasury-yield",
@@ -283,7 +283,7 @@
       "curatorUsage": "Steakhouse curates the steakUSDM vault on Morpho",
       "status": "sunsetting",
       "keyFact": "Being sunset after Anchorage Digital acquisition (May 2025). Licensed by Bermuda Monetary Authority.",
-      "marketCap": "Declining",
+      "marketCap": "~$18M",
       "peg": "USD (rebasing)",
       "collapsed": false,
       "hasYield": true,
@@ -311,7 +311,7 @@
       "curatorUsage": "Steakhouse curates a Morpho vault for Safe with it",
       "status": "active",
       "keyFact": "First major MiCA-compliant EUR stablecoin. First non-USD institutional stablecoin in curator ecosystem.",
-      "marketCap": "Small",
+      "marketCap": "~$180M",
       "peg": "EUR",
       "collapsed": false,
       "hasYield": false,
@@ -338,7 +338,7 @@
       "curatorUsage": "Aave-native. Not yet in Morpho vaults. Likely default stablecoin for Aave V4",
       "status": "active",
       "keyFact": "Aave's own stablecoin. stkGHO stakers earn ~8.4% APY but face slashing if protocol has a deficit.",
-      "marketCap": "Growing",
+      "marketCap": "~$698M",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -365,7 +365,7 @@
       "curatorUsage": "Morpho was the first lending platform to support it. Aave V3 has incentives",
       "status": "active",
       "keyFact": "Issued by Paxos Trust (regulated NY trust) for PayPal. Monthly attestations. Also used for AI infra financing.",
-      "marketCap": "Multi-billion",
+      "marketCap": "~$3B",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -388,12 +388,12 @@
       "backing": "Originally algorithmic + USDC. Now mostly USDC-backed",
       "backingShort": "mostly USDC-backed (was algorithmic, pivoted after Terra collapse)",
       "riskTier": "LOW-MED",
-      "yield": "Via sFRAX \u2014 from DeFi + RWA (Treasury) yield",
+      "yield": "Via sFRAX — from DeFi + RWA (Treasury) yield",
       "yieldSource": "DeFi protocol revenue + Treasury yields",
       "curatorUsage": "sFRAX used as collateral in DeFi lending markets",
       "status": "active",
       "keyFact": "Pivoted from algorithmic model to USDC-backed after Terra/UST collapse. frxETH was first collateral for crvUSD.",
-      "marketCap": "~$1B",
+      "marketCap": "~$159M",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -419,13 +419,13 @@
       "yieldSource": null,
       "curatorUsage": "Used in DeFi yield strategies. Rings Protocol scUSD farms crvUSD positions",
       "status": "active",
-      "keyFact": "Uses LLAMMA for 'soft liquidation' \u2014 positions gradually convert to stablecoin instead of hard liquidating. Peg Keepers stabilize against USDC/USDT.",
-      "marketCap": "~$100M+",
+      "keyFact": "Uses LLAMMA for 'soft liquidation' — positions gradually convert to stablecoin instead of hard liquidating. Peg Keepers stabilize against USDC/USDT.",
+      "marketCap": "~$283M",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
       "isWrapper": false,
-      "regulation": "Decentralized \u2014 no regulatory license",
+      "regulation": "Decentralized — no regulatory license",
       "tags": [
         "llamma-soft-liquidation",
         "peg-keepers",
@@ -444,15 +444,15 @@
       "riskTier": "LOW",
       "yield": "None (interest-free borrowing, one-time fee)",
       "yieldSource": null,
-      "curatorUsage": "Niche \u2014 respected for max decentralization but small liquidity limits curator adoption",
+      "curatorUsage": "Niche — respected for max decentralization but small liquidity limits curator adoption",
       "status": "active",
       "keyFact": "Most decentralized stablecoin. No governance, no admin keys, immutable smart contracts. Only ETH collateral.",
-      "marketCap": "~$500M",
+      "marketCap": "~$27M",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
       "isWrapper": false,
-      "regulation": "Immutable \u2014 no governance or admin of any kind",
+      "regulation": "Immutable — no governance or admin of any kind",
       "tags": [
         "most-decentralized",
         "eth-only-collateral",
@@ -475,7 +475,7 @@
       "curatorUsage": "In Morpho vaults (~32% allocation in some). Also on Fluid and Euler",
       "status": "active",
       "keyFact": "Same delta-neutral model as Ethena's USDe but smaller/newer. Raised $10M seed from Coinbase Ventures, Maven11.",
-      "marketCap": "Small",
+      "marketCap": "~$740K",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -502,7 +502,7 @@
       "curatorUsage": "Re7 curates PT-sUSDf vaults on Morpho",
       "status": "active",
       "keyFact": "Incubated by DWF Labs (controversial market maker). FF Foundation controls all token supply.",
-      "marketCap": "Growing",
+      "marketCap": "~$1B",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -528,8 +528,8 @@
       "yieldSource": null,
       "curatorUsage": "Primarily Binance ecosystem. Not widely used in Morpho curator vaults",
       "status": "active",
-      "keyFact": "Had a depeg scare in 2025 \u2014 reserve rumors drained liquidity and sparked panic withdrawals.",
-      "marketCap": "~$2B",
+      "keyFact": "Had a depeg scare in 2025 — reserve rumors drained liquidity and sparked panic withdrawals.",
+      "marketCap": "~$335M",
       "peg": "USD",
       "collapsed": false,
       "hasYield": false,
@@ -579,7 +579,7 @@
       "riskTier": "DEAD",
       "yield": "Promised up to 12%",
       "yieldSource": "leveraged farming (failed)",
-      "curatorUsage": "Was in Re7, MEV Capital, Telos vaults \u2014 all got destroyed",
+      "curatorUsage": "Was in Re7, MEV Capital, Telos vaults — all got destroyed",
       "status": "collapsed",
       "keyFact": "External fund manager lost $93M. Crashed from $1.00 to $0.26 in 24hrs. Total $285M DeFi exposure.",
       "marketCap": "~$0 (was ~$200M)",
@@ -685,7 +685,7 @@
       "yieldSource": "Ethereum staking rewards minus Coinbase's 25% commission",
       "curatorUsage": "Aave V3 collateral. Block Analitica Flagship ETH vault. Institutional preference",
       "status": "active",
-      "keyFact": "Centralized but regulated. Coinbase also issues cbBTC \u2014 paired institutional collateral set. 198K ETH deposited.",
+      "keyFact": "Centralized but regulated. Coinbase also issues cbBTC — paired institutional collateral set. 198K ETH deposited.",
       "marketCap": "~$500M",
       "peg": "ETH (appreciating)",
       "collapsed": false,
@@ -716,13 +716,13 @@
       "yieldSource": "Ethereum staking rewards from decentralized operator set",
       "curatorUsage": "Aave V3 collateral. Block Analitica Flagship ETH vault (rETH/WETH + rETH/USDC). Decentralization-focused curators",
       "status": "active",
-      "keyFact": "Most decentralized LST \u2014 anyone can run a node with 8 ETH + RPL. Atlas upgrade (2023) reduced bond to 8 ETH.",
+      "keyFact": "Most decentralized LST — anyone can run a node with 8 ETH + RPL. Atlas upgrade (2023) reduced bond to 8 ETH.",
       "marketCap": "~$1.4B",
       "peg": "ETH (appreciating)",
       "collapsed": false,
       "hasYield": true,
       "isWrapper": false,
-      "regulation": "Decentralized \u2014 permissionless",
+      "regulation": "Decentralized — permissionless",
       "tags": [
         "most-decentralized-lst",
         "permissionless-operators",
@@ -806,7 +806,7 @@
       "yieldSource": "ETH staking + EigenLayer AVS rewards + ETHFI token incentives",
       "curatorUsage": "THE dominant LRT. 57.9% of ALL Aave WETH borrowings ($3.27B debt). Re7, MEV Capital, Gauntlet LRT Core, Block Analitica",
       "status": "active",
-      "keyFact": "Largest LRT. $4.59B supply on Aave. 93% LTV eMode enables leverage loops. Non-custodial \u2014 stakers keep validator keys.",
+      "keyFact": "Largest LRT. $4.59B supply on Aave. 93% LTV eMode enables leverage loops. Non-custodial — stakers keep validator keys.",
       "marketCap": "$4-6.8B TVL",
       "peg": "ETH (appreciating)",
       "collapsed": false,
@@ -838,7 +838,7 @@
       "yieldSource": "ETH staking + EigenLayer restaking rewards",
       "curatorUsage": "Aave V3 (93% LTV eMode). Gauntlet LRT Core vault (initial asset). Re7 WETH vault",
       "status": "active",
-      "keyFact": "Worst LRT depeg \u2014 dropped to 0.2 ETH on Uniswap (April 2024). Root cause: NO withdrawal function existed at launch.",
+      "keyFact": "Worst LRT depeg — dropped to 0.2 ETH on Uniswap (April 2024). Root cause: NO withdrawal function existed at launch.",
       "marketCap": "~$4B at peak",
       "peg": "ETH (appreciating)",
       "collapsed": false,
@@ -855,7 +855,7 @@
       "riskLayers": 4,
       "withdrawalTime": "7+ days",
       "restakingProtocol": "EigenLayer",
-      "depegHistory": "April 24, 2024: Dropped to 0.2 ETH (~$688 vs $3,400 NAV). 7%+ depeg triggered by REZ airdrop \u2014 no withdrawal function existed.",
+      "depegHistory": "April 24, 2024: Dropped to 0.2 ETH (~$688 vs $3,400 NAV). 7%+ depeg triggered by REZ airdrop — no withdrawal function existed.",
       "depegDate": "April 2024",
       "depegSeverity": "7%+ (briefly 80% off NAV on Uniswap)"
     },
@@ -1032,7 +1032,7 @@
       "collapsed": false,
       "hasYield": false,
       "isWrapper": true,
-      "regulation": "Decentralized \u2014 threshold cryptography",
+      "regulation": "Decentralized — threshold cryptography",
       "tags": [
         "most-decentralized-btc",
         "threshold-cryptography",
@@ -1058,8 +1058,8 @@
         "EURCV vault for Safe"
       ],
       "feeModel": "Performance fee",
-      "collateralPreference": "Tier 1 only \u2014 wstETH, USDC, T-Bills",
-      "streamExposure": "None \u2014 avoided entirely",
+      "collateralPreference": "Tier 1 only — wstETH, USDC, T-Bills",
+      "streamExposure": "None — avoided entirely",
       "keyFact": "Guardian drill system for emergency response. Conservative collateral kept them safe during Stream crisis. ~$1.28B TVL.",
       "tags": [
         "conservative",
@@ -1085,8 +1085,8 @@
         "Euler Prime"
       ],
       "feeModel": "~$690 per $1M TVL",
-      "collateralPreference": "Moderate \u2014 accepts LRTs with quantitative guardrails",
-      "streamExposure": "Indirect \u2014 paused Compound markets after deUSD cascade",
+      "collateralPreference": "Moderate — accepts LRTs with quantitative guardrails",
+      "streamExposure": "Indirect — paused Compound markets after deUSD cascade",
       "keyFact": "Left Aave risk management (2024) to become Morpho curator. LRT Core vault hit by ezETH depeg. Absorbed $775M USDT during Stream.",
       "tags": [
         "quantitative",
@@ -1110,8 +1110,8 @@
         "PT-sUSDf vaults"
       ],
       "feeModel": "20% perf fee, ~$3,300-5,000 per $1M TVL",
-      "collateralPreference": "Aggressive \u2014 weETH, osETH, USD1, PT tokens, accepted xUSD",
-      "streamExposure": "$27.4M \u2014 $14.65M in xUSD segregated vault on Euler",
+      "collateralPreference": "Aggressive — weETH, osETH, USD1, PT tokens, accepted xUSD",
+      "streamExposure": "$27.4M — $14.65M in xUSD segregated vault on Euler",
       "keyFact": "Most active curator (was 14 chains, 100+ pools). 83% TVL collapse post-Stream. Bought Giza automation ($500K). 5-7x more revenue per $1M than Gauntlet.",
       "tags": [
         "most-active",
@@ -1133,9 +1133,9 @@
         "Flagship ETH (wstETH/rETH/cbETH at 94.5% LTV)"
       ],
       "feeModel": "Performance fee",
-      "collateralPreference": "Conservative \u2014 wstETH, rETH, cbETH. Led oracle debate",
-      "streamExposure": "None \u2014 avoided entirely",
-      "keyFact": "Led the wstETH oracle debate \u2014 argued exchange rate is the 'real price.' Flagship vaults focus on battle-tested collateral only.",
+      "collateralPreference": "Conservative — wstETH, rETH, cbETH. Led oracle debate",
+      "streamExposure": "None — avoided entirely",
+      "keyFact": "Led the wstETH oracle debate — argued exchange rate is the 'real price.' Flagship vaults focus on battle-tested collateral only.",
       "tags": [
         "conservative",
         "oracle-expert",
@@ -1146,7 +1146,7 @@
     {
       "name": "MEV Capital",
       "type": "Active / Yield-focused",
-      "tvl": "Collapsed \u2014 absorbed by Belem Capital",
+      "tvl": "Collapsed — absorbed by Belem Capital",
       "venues": [
         "Morpho",
         "Euler"
@@ -1156,8 +1156,8 @@
         "Inception inwstETHs on Euler"
       ],
       "feeModel": "Performance fee",
-      "collateralPreference": "Aggressive \u2014 LRTs, exotic collateral, accepted xUSD",
-      "streamExposure": "$34M \u2014 largest single curator exposure",
+      "collateralPreference": "Aggressive — LRTs, exotic collateral, accepted xUSD",
+      "streamExposure": "$34M — largest single curator exposure",
       "keyFact": "$10M+ bad debt. 80% AUM collapse. Absorbed by Belem Capital. Most consistent active APY outperformer before collapse.",
       "tags": [
         "collapsed",
@@ -1177,7 +1177,7 @@
         "USDT vault for Pendle LP/PT collateral"
       ],
       "feeModel": "Performance fee",
-      "collateralPreference": "Moderate \u2014 Pendle PTs, avoided xUSD but hit by deUSD",
+      "collateralPreference": "Moderate — Pendle PTs, avoided xUSD but hit by deUSD",
       "streamExposure": "$2M impaired via deUSD (pursuing legal action against Elixir)",
       "keyFact": "Avoided xUSD but hit by deUSD's hidden Stream exposure. Dedicated Pendle collateral vault on Morpho. Legal action against Elixir.",
       "tags": [
@@ -1197,8 +1197,8 @@
         "Conservative USDC vaults"
       ],
       "feeModel": "Performance fee",
-      "collateralPreference": "Conservative \u2014 Tier 1-2 only",
-      "streamExposure": "None \u2014 avoided entirely",
+      "collateralPreference": "Conservative — Tier 1-2 only",
+      "streamExposure": "None — avoided entirely",
       "keyFact": "One of the 'winners' who stuck to safe collateral during Stream crisis.",
       "tags": [
         "conservative",
@@ -1229,7 +1229,7 @@
         "~$5B",
         "~$1.5B"
       ],
-      "explanation": "EURCV has ~$50M \u2014 small but institutional-grade (Societe Generale).",
+      "explanation": "EURCV has ~$50M — small but institutional-grade (Societe Generale).",
       "coin": "EURCV"
     },
     {
@@ -1253,7 +1253,7 @@
         "~$6B",
         "~$1.5B"
       ],
-      "explanation": "USR (Resolv) has ~$50M \u2014 early stage.",
+      "explanation": "USR (Resolv) has ~$50M — early stage.",
       "coin": "USR"
     },
     {
@@ -1277,7 +1277,7 @@
         "~$2B",
         "~$300M"
       ],
-      "explanation": "scUSD (Rings Protocol) has ~$30M \u2014 Sonic ecosystem.",
+      "explanation": "scUSD (Rings Protocol) has ~$30M — Sonic ecosystem.",
       "coin": "scUSD"
     },
     {
@@ -1469,7 +1469,7 @@
         "BNB Chain",
         "Arbitrum"
       ],
-      "explanation": "Tron is the dominant non-Ethereum chain for USDT \u2014 more USDT on Tron than Ethereum.",
+      "explanation": "Tron is the dominant non-Ethereum chain for USDT — more USDT on Tron than Ethereum.",
       "coin": "USDT"
     },
     {
@@ -1589,7 +1589,7 @@
         "sUSDS",
         "USDY"
       ],
-      "explanation": "USDM is a rebasing ERC-20 \u2014 your balance increases daily. Others use wrapper appreciation.",
+      "explanation": "USDM is a rebasing ERC-20 — your balance increases daily. Others use wrapper appreciation.",
       "coin": "USDM"
     },
     {
@@ -1631,13 +1631,13 @@
     {
       "type": "Yield",
       "text": "What unique risk do stkGHO holders face?",
-      "correct": "Slashing \u2014 staked amount can be cut during protocol deficit",
+      "correct": "Slashing — staked amount can be cut during protocol deficit",
       "wrongs": [
         "4-year lockup",
         "Negative yield rates",
         "Impermanent loss"
       ],
-      "explanation": "stkGHO is in Aave's Umbrella safety module \u2014 stakers face slashing risk.",
+      "explanation": "stkGHO is in Aave's Umbrella safety module — stakers face slashing risk.",
       "coin": "GHO"
     },
     {
@@ -1649,7 +1649,7 @@
         "It automatically converts to USDC",
         "The token gets burned"
       ],
-      "explanation": "When funding rates turn negative in bear markets, Ethena's insurance fund covers losses \u2014 but it's finite.",
+      "explanation": "When funding rates turn negative in bear markets, Ethena's insurance fund covers losses — but it's finite.",
       "coin": "sUSDe"
     },
     {
@@ -1661,7 +1661,7 @@
         "From perpetual futures funding rates",
         "From liquidity mining rewards"
       ],
-      "explanation": "USDY is backed by Treasuries and bank deposits \u2014 the yield is simply the Treasury return.",
+      "explanation": "USDY is backed by Treasuries and bank deposits — the yield is simply the Treasury return.",
       "coin": "USDY"
     },
     {
@@ -1726,7 +1726,7 @@
     },
     {
       "type": "Custody",
-      "text": "Which firm provides attestations for USDC \u2014 Deloitte or BDO?",
+      "text": "Which firm provides attestations for USDC — Deloitte or BDO?",
       "correct": "Deloitte (monthly)",
       "wrongs": [
         "BDO Italia (quarterly)",
@@ -1757,7 +1757,7 @@
         "Annual",
         "None"
       ],
-      "explanation": "USDT has quarterly attestations by BDO Italia \u2014 notably NOT full audits.",
+      "explanation": "USDT has quarterly attestations by BDO Italia — notably NOT full audits.",
       "coin": "USDT"
     },
     {
@@ -1769,7 +1769,7 @@
         "Fidelity",
         "The SEC"
       ],
-      "explanation": "Ankura Trust is the collateral agent \u2014 they liquidate assets to repay USDY holders if Ondo defaults.",
+      "explanation": "Ankura Trust is the collateral agent — they liquidate assets to repay USDY holders if Ondo defaults.",
       "coin": "USDY"
     },
     {
@@ -1781,7 +1781,7 @@
         "In Aave V3",
         "In a multisig wallet"
       ],
-      "explanation": "Ethena uses off-exchange custody \u2014 assets never actually sit on the exchanges they trade futures on.",
+      "explanation": "Ethena uses off-exchange custody — assets never actually sit on the exchanges they trade futures on.",
       "coin": "USDe"
     },
     {
@@ -1923,7 +1923,7 @@
       "wrongs": [
         "USDe (Ethena)",
         "They launched the same year",
-        "Neither \u2014 both are pre-2023"
+        "Neither — both are pre-2023"
       ],
       "explanation": "USR is a smaller, newer competitor to Ethena's USDe using the same delta-neutral model.",
       "coin": "USR"
@@ -1937,19 +1937,19 @@
         "They earn staking rewards on BTC",
         "They sell governance tokens"
       ],
-      "explanation": "In positive funding rate environments, shorts (Ethena) get paid by longs \u2014 this is the primary yield source.",
+      "explanation": "In positive funding rate environments, shorts (Ethena) get paid by longs — this is the primary yield source.",
       "coin": "USDe"
     },
     {
       "type": "Mechanism",
       "text": "What happens to USDe if all three major exchanges (Binance, Bybit, OKX) go down?",
-      "correct": "The hedging position breaks \u2014 USDe is exposed to spot price risk",
+      "correct": "The hedging position breaks — USDe is exposed to spot price risk",
       "wrongs": [
-        "Nothing \u2014 assets are in off-exchange custody",
+        "Nothing — assets are in off-exchange custody",
         "USDe automatically converts to USDC",
         "Insurance fund covers all losses"
       ],
-      "explanation": "Exchange counterparty risk is the key concern \u2014 if exchanges fail, the short futures positions are lost.",
+      "explanation": "Exchange counterparty risk is the key concern — if exchanges fail, the short futures positions are lost.",
       "coin": "USDe"
     },
     {
@@ -1961,7 +1961,7 @@
         "There's a governance vote to set rates to 0",
         "The protocol charges no fees at all"
       ],
-      "explanation": "LUSD charges a one-time borrowing fee. No ongoing interest \u2014 that's the Liquity innovation.",
+      "explanation": "LUSD charges a one-time borrowing fee. No ongoing interest — that's the Liquity innovation.",
       "coin": "LUSD"
     },
     {
@@ -1991,19 +1991,19 @@
     {
       "type": "Mechanism",
       "text": "What is 'off-exchange custody' in Ethena's context?",
-      "correct": "Assets held at custodians (Copper/Ceffu), only margin posted to exchanges \u2014 never full transfer",
+      "correct": "Assets held at custodians (Copper/Ceffu), only margin posted to exchanges — never full transfer",
       "wrongs": [
         "Assets stored in cold wallets on each exchange",
         "Assets held in Aave as collateral",
         "Assets distributed across multiple multisig wallets"
       ],
-      "explanation": "Ethena delegates but never transfers custody \u2014 exchange risk is reduced because assets aren't ON the exchange.",
+      "explanation": "Ethena delegates but never transfers custody — exchange risk is reduced because assets aren't ON the exchange.",
       "coin": "USDe"
     },
     {
       "type": "Mechanism",
       "text": "What was the 'recursive collateral' problem with xUSD?",
-      "correct": "xUSD was used as collateral to borrow more assets, then redeposited \u2014 circular leverage",
+      "correct": "xUSD was used as collateral to borrow more assets, then redeposited — circular leverage",
       "wrongs": [
         "xUSD had no collateral backing at all",
         "Multiple protocols independently backed xUSD",
@@ -2021,7 +2021,7 @@
         "A smart contract bug was exploited",
         "Ethereum dropped 50% and broke the hedge"
       ],
-      "explanation": "deUSD's delta-neutral model was fine \u2014 the failure was Elixir's undisclosed concentration in Stream Finance.",
+      "explanation": "deUSD's delta-neutral model was fine — the failure was Elixir's undisclosed concentration in Stream Finance.",
       "coin": "deUSD"
     },
     {
@@ -2165,7 +2165,7 @@
         "$0 (break even)",
         "$10M loss"
       ],
-      "explanation": "K3 avoided xUSD directly \u2014 their Neutrl Labs $75M pre-deposits actually gained $250K. But deUSD hit them separately.",
+      "explanation": "K3 avoided xUSD directly — their Neutrl Labs $75M pre-deposits actually gained $250K. But deUSD hit them separately.",
       "coin": "deUSD"
     },
     {
@@ -2177,7 +2177,7 @@
         "Paused all vault operations",
         "Had no systems in place to respond"
       ],
-      "explanation": "Block Analitica responded swiftly via Lazy Summer Protocol \u2014 zero risk caps for Stream-related sources.",
+      "explanation": "Block Analitica responded swiftly via Lazy Summer Protocol — zero risk caps for Stream-related sources.",
       "coin": "xUSD"
     },
     {
@@ -2237,7 +2237,7 @@
         "LUSD",
         "USDe"
       ],
-      "explanation": "GHO is governed by Aave DAO \u2014 minted against Aave V3 collateral.",
+      "explanation": "GHO is governed by Aave DAO — minted against Aave V3 collateral.",
       "coin": "GHO"
     },
     {
@@ -2291,7 +2291,7 @@
     {
       "type": "Issuer",
       "text": "What is the relationship between DAI and USDS?",
-      "correct": "USDS is the replacement for DAI \u2014 same protocol, new brand (Sky Protocol)",
+      "correct": "USDS is the replacement for DAI — same protocol, new brand (Sky Protocol)",
       "wrongs": [
         "They are competing stablecoins from different protocols",
         "DAI is backed by USDS",
@@ -2350,14 +2350,14 @@
     },
     {
       "type": "Backing",
-      "text": "Which stablecoin is backed by 'nothing' in the traditional sense \u2014 only derivatives positions?",
+      "text": "Which stablecoin is backed by 'nothing' in the traditional sense — only derivatives positions?",
       "correct": "USDe",
       "wrongs": [
         "USDC",
         "DAI",
         "USD0"
       ],
-      "explanation": "USDe has no dollar reserves, no Treasuries, no collateral \u2014 only spot + short futures positions.",
+      "explanation": "USDe has no dollar reserves, no Treasuries, no collateral — only spot + short futures positions.",
       "coin": "USDe"
     },
     {
@@ -2417,7 +2417,7 @@
         "USDT",
         "USD1"
       ],
-      "explanation": "sUSDe is staked USDe \u2014 a wrapper that appreciates in value. The others are base tokens.",
+      "explanation": "sUSDe is staked USDe — a wrapper that appreciates in value. The others are base tokens.",
       "coin": "sUSDe"
     },
     {
@@ -2447,9 +2447,9 @@
     {
       "type": "Type",
       "text": "How many stablecoins in the ecosystem are pegged to the Euro?",
-      "correct": "One \u2014 EURCV",
+      "correct": "One — EURCV",
       "wrongs": [
-        "Two \u2014 EURCV and EURS",
+        "Two — EURCV and EURS",
         "Three",
         "None"
       ],
