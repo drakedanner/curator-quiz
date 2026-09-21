@@ -1,125 +1,1322 @@
 [
-    {"type": "Supply", "text": "What is the approximate circulating supply of USDY?", "correct": "~$500M", "wrongs": ["~$5B", "~$33B", "~$50M"], "explanation": "USDY has ~$500M in circulation.", "coin": "USDY"},
-    {"type": "Supply", "text": "What is the approximate circulating supply of EURCV?", "correct": "~$50M", "wrongs": ["~$500M", "~$5B", "~$1.5B"], "explanation": "EURCV has ~$50M — small but institutional-grade (Societe Generale).", "coin": "EURCV"},
-    {"type": "Supply", "text": "What is the approximate circulating supply of crvUSD?", "correct": "~$100M", "wrongs": ["~$5B", "~$500M", "~$33B"], "explanation": "crvUSD has ~$100M in circulation.", "coin": "crvUSD"},
-    {"type": "Supply", "text": "What is the approximate circulating supply of USR?", "correct": "~$50M", "wrongs": ["~$500M", "~$6B", "~$1.5B"], "explanation": "USR (Resolv) has ~$50M — early stage.", "coin": "USR"},
-    {"type": "Supply", "text": "What is the approximate circulating supply of USDf?", "correct": "~$300M", "wrongs": ["~$50M", "~$6B", "~$33B"], "explanation": "USDf (Falcon Finance) has ~$300M in circulation.", "coin": "USDf"},
-    {"type": "Supply", "text": "What is the approximate circulating supply of scUSD?", "correct": "~$30M", "wrongs": ["~$500M", "~$2B", "~$300M"], "explanation": "scUSD (Rings Protocol) has ~$30M — Sonic ecosystem.", "coin": "scUSD"},
-    {"type": "Supply", "text": "Which stablecoin has the second-largest circulating supply?", "correct": "USDC (~$33B)", "wrongs": ["DAI (~$5B)", "USDe (~$6B)", "USD1 ($3.4B)"], "explanation": "USDC at ~$33B is second only to USDT (~$140B).", "coin": "USDC"},
-    {"type": "Supply", "text": "Which is the largest synthetic stablecoin by supply?", "correct": "USDe (~$6B+)", "wrongs": ["USR (~$50M)", "USDf (~$300M)", "crvUSD (~$100M)"], "explanation": "USDe is the largest synthetic stablecoin at ~$6B+.", "coin": "USDe"},
-    {"type": "Supply", "text": "Which stablecoin's supply is declining as it's being sunset?", "correct": "USDM", "wrongs": ["USDC", "DAI", "FRAX"], "explanation": "USDM (Mountain Protocol) is being sunset after Anchorage Digital acquisition.", "coin": "USDM"},
-    {"type": "Supply", "text": "Which stablecoin's supply is declining as its replacement (USDS) grows?", "correct": "DAI", "wrongs": ["USDC", "USDT", "FRAX"], "explanation": "DAI supply is declining as users migrate to USDS under the Sky Protocol rebrand.", "coin": "DAI"},
-    {"type": "Supply", "text": "USDT's supply is approximately how many times larger than USDC's?", "correct": "~4x ($140B vs $33B)", "wrongs": ["~2x", "~10x", "About the same"], "explanation": "USDT (~$140B) is roughly 4x larger than USDC (~$33B).", "coin": "USDT"},
-
-    {"type": "People", "text": "Who is Conor Ryder?", "correct": "Head of Research at Ethena", "wrongs": ["CEO of Circle", "Founder of Liquity", "CTO of Aave"], "explanation": "Conor Ryder is the Head of Research at Ethena (USDe issuer).", "coin": "USDe"},
-    {"type": "People", "text": "Who is Rick Pardoe?", "correct": "Co-founder of Liquity Protocol (LUSD)", "wrongs": ["Founder of Curve Finance", "CEO of Tether", "Co-founder of Ethena"], "explanation": "Rick Pardoe co-founded Liquity Protocol alongside Robert Lauko.", "coin": "LUSD"},
-    {"type": "People", "text": "Who is Dante Disparte?", "correct": "Chief Strategy Officer of Circle (USDC)", "wrongs": ["CEO of Tether", "Founder of Aave", "CTO of Paxos"], "explanation": "Dante Disparte is the CSO of Circle.", "coin": "USDC"},
-    {"type": "People", "text": "Who is Adli Takkal Bataille?", "correct": "Co-founder of Usual Protocol (USD0)", "wrongs": ["Founder of Curve Finance", "CEO of Ondo Finance", "CTO of Ethena"], "explanation": "Adli Takkal Bataille co-founded Usual Protocol alongside Pierre Person.", "coin": "USD0"},
-    {"type": "People", "text": "Who is Sam MacPherson?", "correct": "Spark Protocol lead (Sky subDAO)", "wrongs": ["Founder of Ethena", "CEO of Morpho", "CTO of Aave"], "explanation": "Sam MacPherson leads Spark Protocol, Sky's lending subDAO that allocated $1.1B to Ethena.", "coin": "USDS"},
-    {"type": "People", "text": "Dan Schulman is associated with which stablecoin?", "correct": "PYUSD (former PayPal CEO who launched it)", "wrongs": ["USDC (Circle CEO)", "USDT (Tether CEO)", "USD1 (WLFI founder)"], "explanation": "Dan Schulman was the PayPal CEO who launched PYUSD.", "coin": "PYUSD"},
-    {"type": "People", "text": "Jean-Louis van der Velde held which role at Tether?", "correct": "Former CEO (stepped down 2023)", "wrongs": ["Current CEO", "CFO", "Chief Legal Officer"], "explanation": "Jean-Louis van der Velde was Tether's CEO until 2023, when Paolo Ardoino took over.", "coin": "USDT"},
-    {"type": "People", "text": "Zach Witkoff co-founded which stablecoin project?", "correct": "World Liberty Financial (USD1)", "wrongs": ["Circle (USDC)", "Ethena (USDe)", "Usual Protocol (USD0)"], "explanation": "Zach Witkoff is a co-founder of World Liberty Financial.", "coin": "USD1"},
-    {"type": "People", "text": "Chase Herro co-founded which stablecoin project?", "correct": "World Liberty Financial (USD1)", "wrongs": ["Falcon Finance (USDf)", "Resolv Labs (USR)", "Frax Finance (FRAX)"], "explanation": "Chase Herro is a co-founder of World Liberty Financial.", "coin": "USD1"},
-
-    {"type": "Liquidity", "text": "Which chains is USDC deployed on?", "correct": "Ethereum, Base, Solana, Arbitrum, Optimism, Polygon, Avalanche", "wrongs": ["Ethereum only", "Ethereum and Tron only", "Ethereum, BNB Chain, and Tron"], "explanation": "USDC is one of the most widely deployed stablecoins across major chains.", "coin": "USDC"},
-    {"type": "Liquidity", "text": "Which chain has the most USDT activity outside Ethereum?", "correct": "Tron", "wrongs": ["Solana", "BNB Chain", "Arbitrum"], "explanation": "Tron is the dominant non-Ethereum chain for USDT — more USDT on Tron than Ethereum.", "coin": "USDT"},
-    {"type": "Liquidity", "text": "USDS was deployed on which non-EVM chain in Nov 2024?", "correct": "Solana", "wrongs": ["Tron", "Sui", "Aptos"], "explanation": "USDS deployed on Solana in November 2024 with incentives for liquidity providers.", "coin": "USDS"},
-    {"type": "Liquidity", "text": "Which DeFi protocol is the primary liquidity venue for GHO?", "correct": "Aave V3 (where it's minted)", "wrongs": ["Morpho", "Compound", "Uniswap"], "explanation": "GHO is minted natively on Aave V3. Secondary liquidity on Balancer.", "coin": "GHO"},
-    {"type": "Liquidity", "text": "Where is EURCV primarily used in DeFi?", "correct": "Morpho vault curated by Steakhouse for Safe", "wrongs": ["Aave V3 as collateral", "Curve liquidity pools", "Compound markets"], "explanation": "EURCV's main DeFi use is through the Steakhouse-curated Morpho vault for Safe wallet.", "coin": "EURCV"},
-    {"type": "Liquidity", "text": "USDe is used as collateral on which major platforms?", "correct": "Aave, Morpho, Spark, Curve, Pendle", "wrongs": ["Only Morpho", "Only Aave and Compound", "Only decentralized exchanges"], "explanation": "USDe is one of the most widely accepted collateral assets across DeFi.", "coin": "USDe"},
-    {"type": "Liquidity", "text": "On which chain is scUSD's underlying USDC farmed?", "correct": "Ethereum (via Veda BoringVaults)", "wrongs": ["Sonic", "Arbitrum", "Solana"], "explanation": "scUSD lives on Sonic but the underlying USDC is sent to Ethereum for DeFi farming.", "coin": "scUSD"},
-    {"type": "Liquidity", "text": "Which lending platforms was xUSD used on before collapse?", "correct": "Morpho, Euler, Silo, and Gearbox", "wrongs": ["Only Aave", "Only Morpho and Compound", "Only Euler"], "explanation": "xUSD spread across 4+ lending protocols, amplifying contagion.", "coin": "xUSD"},
-    {"type": "Liquidity", "text": "Which stablecoin can be minted on Fraxtal (Frax's own L2)?", "correct": "FRAX", "wrongs": ["USDC", "DAI", "crvUSD"], "explanation": "Fraxtal is Frax Finance's own L2 chain.", "coin": "FRAX"},
-    {"type": "Liquidity", "text": "USDY is deployed on which non-EVM chains?", "correct": "Solana, Sui, Aptos", "wrongs": ["Tron, BNB Chain", "Only Ethereum", "Bitcoin, Cosmos"], "explanation": "USDY has expanded beyond Ethereum to Solana, Mantle, Sui, and Aptos.", "coin": "USDY"},
-    {"type": "Liquidity", "text": "FDUSD is deployed on which chains?", "correct": "Ethereum and BNB Chain", "wrongs": ["Ethereum only", "Ethereum, Solana, and Tron", "BNB Chain only"], "explanation": "FDUSD is primarily on Ethereum and BNB Chain (Binance ecosystem).", "coin": "FDUSD"},
-
-    {"type": "Yield", "text": "Which yield-bearing stablecoin distributes yield via rebasing (balance increases)?", "correct": "USDM", "wrongs": ["sUSDe", "sUSDS", "USDY"], "explanation": "USDM is a rebasing ERC-20 — your balance increases daily. Others use wrapper appreciation.", "coin": "USDM"},
-    {"type": "Yield", "text": "Which stablecoin earns yield from perpetual futures funding rates?", "correct": "sUSDe (Ethena)", "wrongs": ["sUSDS (Sky)", "USDY (Ondo)", "USDM (Mountain)"], "explanation": "sUSDe yield comes from funding rates on Binance/Bybit/OKX + ETH staking.", "coin": "sUSDe"},
-    {"type": "Yield", "text": "Which stablecoin earns yield from borrower interest in the Sky Protocol?", "correct": "sUSDS", "wrongs": ["sUSDe", "USDY", "USDM"], "explanation": "sUSDS earns from Sky Protocol lending revenue and RWA yields.", "coin": "sUSDS"},
-    {"type": "Yield", "text": "Which stablecoin earns yield from US Treasury bills via Ondo Finance?", "correct": "USDY", "wrongs": ["USDM", "sUSDS", "sUSDe"], "explanation": "USDY earns ~4.25% APY from short-term Treasuries managed by Ondo.", "coin": "USDY"},
-    {"type": "Yield", "text": "What unique risk do stkGHO holders face?", "correct": "Slashing — staked amount can be cut during protocol deficit", "wrongs": ["4-year lockup", "Negative yield rates", "Impermanent loss"], "explanation": "stkGHO is in Aave's Umbrella safety module — stakers face slashing risk.", "coin": "GHO"},
-    {"type": "Yield", "text": "During bear markets, what can happen to sUSDe yield?", "correct": "It can go negative (protocol loses money on funding rates)", "wrongs": ["It stays constant at 5%", "It automatically converts to USDC", "The token gets burned"], "explanation": "When funding rates turn negative in bear markets, Ethena's insurance fund covers losses — but it's finite.", "coin": "sUSDe"},
-    {"type": "Yield", "text": "How does USDY generate its ~4.25% yield?", "correct": "From underlying short-term Treasury and bank deposit returns", "wrongs": ["From DeFi lending revenue", "From perpetual futures funding rates", "From liquidity mining rewards"], "explanation": "USDY is backed by Treasuries and bank deposits — the yield is simply the Treasury return.", "coin": "USDY"},
-    {"type": "Yield", "text": "What is the approximate yield range for sUSDe in favorable (bull) markets?", "correct": "15-25% APY", "wrongs": ["4-5% APY", "8-10% APY", "50-100% APY"], "explanation": "sUSDe can reach 15-25% when funding rates are high in bull markets.", "coin": "sUSDe"},
-    {"type": "Yield", "text": "sFRAX earns yield from what sources?", "correct": "DeFi protocol revenue + Treasury yields", "wrongs": ["Funding rates from futures", "Ethereum staking rewards", "Liquidity mining incentives only"], "explanation": "sFRAX yield combines DeFi revenue and Treasury yields via FinresPBC.", "coin": "FRAX"},
-
-    {"type": "Custody", "text": "Which firm provides custody for USDC and also co-created it?", "correct": "Coinbase", "wrongs": ["BitGo", "Fireblocks", "Anchorage"], "explanation": "Coinbase co-created USDC with Circle via the Centre Consortium.", "coin": "USDC"},
-    {"type": "Custody", "text": "Who manages the USDC reserve investment fund?", "correct": "BlackRock", "wrongs": ["Fidelity", "Cantor Fitzgerald", "BNY Mellon"], "explanation": "BlackRock manages the Circle Reserve Fund (USDC reserves).", "coin": "USDC"},
-    {"type": "Custody", "text": "What role does BNY Mellon play for USDC?", "correct": "Custody provider for reserves", "wrongs": ["Attestation provider", "Reserve manager", "Token issuer"], "explanation": "BNY Mellon provides custody services for USDC reserves alongside BlackRock's management.", "coin": "USDC"},
-    {"type": "Custody", "text": "Which firm provides attestations for USDC — Deloitte or BDO?", "correct": "Deloitte (monthly)", "wrongs": ["BDO Italia (quarterly)", "KPMG (annual)", "PwC (semi-annual)"], "explanation": "Deloitte provides monthly attestations for USDC. BDO Italia does USDT's quarterly attestations.", "coin": "USDC"},
-    {"type": "Custody", "text": "What is the frequency of USDC reserve attestations?", "correct": "Monthly", "wrongs": ["Quarterly", "Annual", "Weekly"], "explanation": "USDC has monthly reserve attestations by Deloitte.", "coin": "USDC"},
-    {"type": "Custody", "text": "What is the frequency of USDT reserve attestations?", "correct": "Quarterly", "wrongs": ["Monthly", "Annual", "None"], "explanation": "USDT has quarterly attestations by BDO Italia — notably NOT full audits.", "coin": "USDT"},
-    {"type": "Custody", "text": "Which entity would liquidate USDY's portfolio if Ondo defaults?", "correct": "Ankura Trust", "wrongs": ["BlackRock", "Fidelity", "The SEC"], "explanation": "Ankura Trust is the collateral agent — they liquidate assets to repay USDY holders if Ondo defaults.", "coin": "USDY"},
-    {"type": "Custody", "text": "Where does Ethena custody its spot ETH/BTC?", "correct": "Off-exchange at Copper.co, Ceffu, Fireblocks", "wrongs": ["Directly on Binance", "In Aave V3", "In a multisig wallet"], "explanation": "Ethena uses off-exchange custody — assets never actually sit on the exchanges they trade futures on.", "coin": "USDe"},
-
-    {"type": "Partner", "text": "Spark Protocol allocated $1.1B to which stablecoin issuer?", "correct": "Ethena (USDe/sUSDe)", "wrongs": ["Circle (USDC)", "Usual Protocol (USD0)", "Ondo Finance (USDY)"], "explanation": "Spark (Sky's subDAO) allocated $1.1B to Ethena's USDe and sUSDe.", "coin": "USDe"},
-    {"type": "Partner", "text": "Which custody firm holds USD1's reserves?", "correct": "BitGo Trust Company", "wrongs": ["Coinbase Custody", "Fireblocks", "Copper.co"], "explanation": "BitGo Trust Company (regulated South Dakota trust) custodies USD1 reserves.", "coin": "USD1"},
-    {"type": "Partner", "text": "Which investment firm manages USD1's reserve assets?", "correct": "Fidelity Investments", "wrongs": ["BlackRock", "Vanguard", "Goldman Sachs"], "explanation": "Fidelity manages USD1's reserve portfolio. BitGo provides custody.", "coin": "USD1"},
-    {"type": "Partner", "text": "Which company acquired Mountain Protocol?", "correct": "Anchorage Digital", "wrongs": ["Coinbase", "BitGo", "Circle"], "explanation": "Anchorage Digital acquired Mountain Protocol in May 2025.", "coin": "USDM"},
-    {"type": "Partner", "text": "FinresPBC is associated with which stablecoin?", "correct": "FRAX (Frax Finance's RWA subsidiary)", "wrongs": ["USDC (Circle's subsidiary)", "USD0 (Usual's subsidiary)", "USDY (Ondo's subsidiary)"], "explanation": "FinresPBC is Frax Finance's US LLC for managing Treasury exposure.", "coin": "FRAX"},
-    {"type": "Partner", "text": "Prescient Assurance provides attestations for which stablecoin?", "correct": "FDUSD", "wrongs": ["USDC", "USDT", "PYUSD"], "explanation": "Prescient Assurance provides attestations for FDUSD (First Digital Trust).", "coin": "FDUSD"},
-
-    {"type": "Comparison", "text": "Which has a larger circulating supply: USDe or DAI?", "correct": "USDe (~$6B+ vs ~$5B)", "wrongs": ["DAI (~$5B vs ~$3B)", "They're about equal", "DAI (~$10B vs ~$6B)"], "explanation": "USDe at ~$6B+ has surpassed DAI at ~$5B.", "coin": "USDe"},
-    {"type": "Comparison", "text": "Which has a larger circulating supply: USD1 or FDUSD?", "correct": "USD1 ($3.4B+ vs ~$2B)", "wrongs": ["FDUSD (~$2B vs ~$500M)", "They're about equal", "FDUSD ($5B vs $3.4B)"], "explanation": "USD1 at $3.4B+ is larger than FDUSD at ~$2B.", "coin": "USD1"},
-    {"type": "Comparison", "text": "Which yields more: USDY or USDM?", "correct": "USDM (~5% vs ~4.25%)", "wrongs": ["USDY (~4.25% vs ~3%)", "They're about equal", "USDY (~8% vs ~5%)"], "explanation": "USDM yields ~5% APY vs USDY's ~4.25% APY. Both from Treasury yields.", "coin": "USDM"},
-    {"type": "Comparison", "text": "Which yields more: sUSDe (bull market) or stkGHO?", "correct": "sUSDe (15-25% vs ~8.4%)", "wrongs": ["stkGHO (~8.4% vs ~5%)", "They're about equal", "stkGHO (~20% vs ~15%)"], "explanation": "sUSDe can reach 15-25% in bull markets. stkGHO is ~8.4% but more stable.", "coin": "sUSDe"},
-    {"type": "Comparison", "text": "Which stablecoin has the higher minimum collateral ratio: LUSD or GHO?", "correct": "GHO (~130% vs 110%)", "wrongs": ["LUSD (110% vs ~100%)", "They're the same", "LUSD (150% vs 130%)"], "explanation": "GHO requires ~130% collateral on Aave. LUSD only requires 110% (ETH only).", "coin": "LUSD"},
-    {"type": "Comparison", "text": "Which is newer: USDe or USR?", "correct": "USR (Resolv Labs)", "wrongs": ["USDe (Ethena)", "They launched the same year", "Neither — both are pre-2023"], "explanation": "USR is a smaller, newer competitor to Ethena's USDe using the same delta-neutral model.", "coin": "USR"},
-
-    {"type": "Mechanism", "text": "How does Ethena make money when funding rates are positive?", "correct": "Short futures positions receive funding payments from longs", "wrongs": ["They charge fees on USDe minting", "They earn staking rewards on BTC", "They sell governance tokens"], "explanation": "In positive funding rate environments, shorts (Ethena) get paid by longs — this is the primary yield source.", "coin": "USDe"},
-    {"type": "Mechanism", "text": "What happens to USDe if all three major exchanges (Binance, Bybit, OKX) go down?", "correct": "The hedging position breaks — USDe is exposed to spot price risk", "wrongs": ["Nothing — assets are in off-exchange custody", "USDe automatically converts to USDC", "Insurance fund covers all losses"], "explanation": "Exchange counterparty risk is the key concern — if exchanges fail, the short futures positions are lost.", "coin": "USDe"},
-    {"type": "Mechanism", "text": "Why is LUSD interest-free?", "correct": "Borrowers pay a one-time fee instead of ongoing interest", "wrongs": ["It's subsidized by Ethereum staking rewards", "There's a governance vote to set rates to 0", "The protocol charges no fees at all"], "explanation": "LUSD charges a one-time borrowing fee. No ongoing interest — that's the Liquity innovation.", "coin": "LUSD"},
-    {"type": "Mechanism", "text": "What makes USD0++ different from USD0?", "correct": "USD0++ is staked USD0 with a 4-year lockup for yield", "wrongs": ["USD0++ is a newer version of USD0", "USD0++ is backed by different assets", "USD0++ is on a different chain"], "explanation": "USD0++ is staked USD0 with a 4-year commitment. The lockup was the source of the Jan 2025 depeg.", "coin": "USD0"},
-    {"type": "Mechanism", "text": "How do crvUSD Peg Keepers work?", "correct": "They mint crvUSD when price is high and burn it when price is low", "wrongs": ["They adjust collateral ratios automatically", "They buy/sell ETH to maintain the peg", "They use oracle price feeds to rebase supply"], "explanation": "Peg Keepers trade crvUSD against USDC/USDT/USDP pools to maintain the peg.", "coin": "crvUSD"},
-    {"type": "Mechanism", "text": "What is 'off-exchange custody' in Ethena's context?", "correct": "Assets held at custodians (Copper/Ceffu), only margin posted to exchanges — never full transfer", "wrongs": ["Assets stored in cold wallets on each exchange", "Assets held in Aave as collateral", "Assets distributed across multiple multisig wallets"], "explanation": "Ethena delegates but never transfers custody — exchange risk is reduced because assets aren't ON the exchange.", "coin": "USDe"},
-    {"type": "Mechanism", "text": "What was the 'recursive collateral' problem with xUSD?", "correct": "xUSD was used as collateral to borrow more assets, then redeposited — circular leverage", "wrongs": ["xUSD had no collateral backing at all", "Multiple protocols independently backed xUSD", "xUSD was backed by other stablecoins only"], "explanation": "Like writing an IOU, using that IOU as collateral for a loan, then using the loan to write more IOUs.", "coin": "xUSD"},
-    {"type": "Mechanism", "text": "Why specifically did deUSD depeg, given its delta-neutral design was theoretically sound?", "correct": "The issuer secretly concentrated 65% of backing in a single yield source that failed", "wrongs": ["Funding rates went deeply negative", "A smart contract bug was exploited", "Ethereum dropped 50% and broke the hedge"], "explanation": "deUSD's delta-neutral model was fine — the failure was Elixir's undisclosed concentration in Stream Finance.", "coin": "deUSD"},
-
-    {"type": "Regulation", "text": "Which stablecoin complies with Europe's MiCA regulation?", "correct": "EURCV", "wrongs": ["USDC", "USDT", "PYUSD"], "explanation": "EURCV (SocGen-FORGE) is the first major MiCA-compliant stablecoin.", "coin": "EURCV"},
-    {"type": "Regulation", "text": "Which stablecoin is issued by a NYDFS-regulated trust company?", "correct": "PYUSD (Paxos Trust)", "wrongs": ["USDT (Tether)", "USD1 (BitGo)", "USDe (Ethena)"], "explanation": "Paxos Trust Company is regulated by NYDFS (New York).", "coin": "PYUSD"},
-    {"type": "Regulation", "text": "Which stablecoin is licensed by the Bermuda Monetary Authority?", "correct": "USDM (Mountain Protocol)", "wrongs": ["USDY (Ondo)", "EURCV (SocGen)", "PYUSD (Paxos)"], "explanation": "Mountain Protocol holds BMA license #202302512.", "coin": "USDM"},
-    {"type": "Regulation", "text": "Which stablecoin's custodian is a regulated South Dakota trust?", "correct": "USD1 (BitGo Trust Company)", "wrongs": ["USDC (Circle)", "USDT (Tether)", "PYUSD (Paxos)"], "explanation": "BitGo Trust Company is a regulated SD trust that custodies USD1 reserves.", "coin": "USD1"},
-    {"type": "Regulation", "text": "Which stablecoin has zero governance and fully immutable contracts?", "correct": "LUSD (Liquity)", "wrongs": ["DAI (MakerDAO)", "GHO (Aave)", "crvUSD (Curve)"], "explanation": "LUSD is the only stablecoin with immutable contracts and no governance at all.", "coin": "LUSD"},
-    {"type": "Regulation", "text": "Tether's reserve attestations are provided by which firm?", "correct": "BDO Italia", "wrongs": ["Deloitte", "KPMG", "Ernst & Young"], "explanation": "BDO Italia provides quarterly attestations for Tether (not full audits).", "coin": "USDT"},
-    {"type": "Regulation", "text": "Circle's USDC attestations are provided by which firm?", "correct": "Deloitte", "wrongs": ["BDO Italia", "PricewaterhouseCoopers", "Grant Thornton"], "explanation": "Deloitte provides monthly attestations for USDC reserves.", "coin": "USDC"},
-    {"type": "Regulation", "text": "Which stablecoin issuer is associated with Bitfinex?", "correct": "Tether (USDT)", "wrongs": ["Circle (USDC)", "Paxos (PYUSD)", "First Digital (FDUSD)"], "explanation": "Tether and Bitfinex share ownership through iFinex Inc.", "coin": "USDT"},
-
-    {"type": "Crisis", "text": "What happened to MEV Capital after the Stream Finance collapse?", "correct": "80% AUM collapse, CEO stepped back, absorbed by Belem Capital", "wrongs": ["Continued operating normally", "Merged with Re7 Labs", "Shut down completely"], "explanation": "MEV Capital lost 80% AUM ($1.5B to $300M), CEO Laurent Bourquin stepped back, 10/15 staff departed.", "coin": "xUSD"},
-    {"type": "Crisis", "text": "What law firm did Re7 Labs use to send a C&D to a Stream Finance whistleblower?", "correct": "Pillsbury Winthrop Shaw Pittman LLP", "wrongs": ["Sullivan & Cromwell", "Skadden Arps", "Davis Polk"], "explanation": "Re7 used Pillsbury Winthrop to threaten a whistleblower who exposed their risk management failures.", "coin": "xUSD"},
-    {"type": "Crisis", "text": "What action did Gauntlet take during the Stream Finance crisis?", "correct": "Paused USDC, USDS, and USDT Comet markets on Compound", "wrongs": ["Withdrew all funds from Morpho", "Shut down all vaults", "Filed for bankruptcy protection"], "explanation": "Gauntlet paused Compound markets due to liquidity crunch from Elixir's deUSD/sdeUSD depeg.", "coin": "deUSD"},
-    {"type": "Crisis", "text": "How much did K3 Capital's Neutrl Labs pre-deposits gain during the xUSD crisis?", "correct": "$250K gain", "wrongs": ["$2M loss", "$0 (break even)", "$10M loss"], "explanation": "K3 avoided xUSD directly — their Neutrl Labs $75M pre-deposits actually gained $250K. But deUSD hit them separately.", "coin": "deUSD"},
-    {"type": "Crisis", "text": "What did Block Analitica do during the Stream Finance crisis?", "correct": "Immediately set risk caps to zero for Stream-related yield sources", "wrongs": ["Lost $15M in xUSD exposure", "Paused all vault operations", "Had no systems in place to respond"], "explanation": "Block Analitica responded swiftly via Lazy Summer Protocol — zero risk caps for Stream-related sources.", "coin": "xUSD"},
-    {"type": "Crisis", "text": "Which curator handled the crisis exemplarily with a 24hr post-mortem and made depositors whole?", "correct": "Clearstar Labs", "wrongs": ["Re7 Labs", "MEV Capital", "Gauntlet"], "explanation": "Clearstar Labs had a separate ~$49K incident but published a 24hr post-mortem and made all depositors whole.", "coin": "xUSD"},
-    {"type": "Crisis", "text": "What borrowing rate did affected vaults reach during the Stream Finance crisis?", "correct": "800%", "wrongs": ["100%", "50%", "2000%"], "explanation": "Borrowing rates hit 800% in affected vaults during the xUSD/Stream Finance crisis.", "coin": "xUSD"},
-    {"type": "Crisis", "text": "What governance action did Lista DAO take during the Stream crisis?", "correct": "Emergency vote (LIP-022) to force liquidation of USDX market at Re7's request", "wrongs": ["Voted to ban Re7 from the protocol", "Voted to freeze all withdrawals", "No governance action was taken"], "explanation": "Lista DAO launched LIP-022 at Re7's own request as vault curator to force liquidate the USDX market.", "coin": "xUSD"},
-    {"type": "Crisis", "text": "How much in liquidation profits did Lista DAO return to affected suppliers?", "correct": "$481,801", "wrongs": ["$93M", "$2M", "$27.4M"], "explanation": "LIP-023 distributed $481,801 USD1 in liquidation profits back to affected vault suppliers.", "coin": "xUSD"},
-
-    {"type": "Issuer", "text": "Which stablecoin is issued by Aave's governance?", "correct": "GHO", "wrongs": ["crvUSD", "LUSD", "USDe"], "explanation": "GHO is governed by Aave DAO — minted against Aave V3 collateral.", "coin": "GHO"},
-    {"type": "Issuer", "text": "Which stablecoin is expected to be the default for Aave V4?", "correct": "GHO", "wrongs": ["USDC", "USDT", "DAI"], "explanation": "GHO is Aave's native stablecoin and will likely be the default for V4 Spokes.", "coin": "GHO"},
-    {"type": "Issuer", "text": "Which stablecoin issuer has its own L2 blockchain?", "correct": "Frax Finance (Fraxtal)", "wrongs": ["Circle (USDC)", "Ethena (USDe)", "Aave (GHO)"], "explanation": "Frax Finance operates Fraxtal, its own L2 chain.", "coin": "FRAX"},
-    {"type": "Issuer", "text": "Which stablecoin is a direct competitor to Ethena's USDe, using the same delta-neutral model?", "correct": "USR (Resolv Labs)", "wrongs": ["crvUSD (Curve)", "GHO (Aave)", "FRAX (Frax Finance)"], "explanation": "USR uses the same delta-neutral ETH strategy as USDe but is smaller and newer.", "coin": "USR"},
-    {"type": "Issuer", "text": "Sky Protocol replaced which token with SKY as its governance token?", "correct": "MKR", "wrongs": ["AAVE", "CRV", "UNI"], "explanation": "Sky Protocol retired MKR and launched SKY as the new governance token in May 2025.", "coin": "USDS"},
-    {"type": "Issuer", "text": "What is the relationship between DAI and USDS?", "correct": "USDS is the replacement for DAI — same protocol, new brand (Sky Protocol)", "wrongs": ["They are competing stablecoins from different protocols", "DAI is backed by USDS", "USDS is a wrapper around DAI"], "explanation": "MakerDAO rebranded to Sky Protocol. DAI is being migrated to USDS.", "coin": "USDS"},
-    {"type": "Issuer", "text": "Which stablecoin issuer is associated with Societe Generale?", "correct": "SocGen-FORGE (EURCV)", "wrongs": ["Circle (USDC)", "Paxos (PYUSD)", "First Digital (FDUSD)"], "explanation": "SocGen-FORGE is Societe Generale's blockchain subsidiary that issues EURCV.", "coin": "EURCV"},
-    {"type": "Issuer", "text": "What is Falcon Finance's relationship to DWF Labs?", "correct": "DWF Labs is the seed investor and incubator", "wrongs": ["DWF Labs competes with Falcon Finance", "No relationship", "DWF Labs audits Falcon Finance"], "explanation": "DWF Labs (Andrei Grachev) incubated and seed-funded Falcon Finance.", "coin": "USDf"},
-
-    {"type": "Backing", "text": "How often does USDC provide reserve attestations vs USDT?", "correct": "USDC monthly, USDT quarterly", "wrongs": ["Both monthly", "Both quarterly", "USDC quarterly, USDT monthly"], "explanation": "USDC (Deloitte, monthly) has more frequent attestations than USDT (BDO Italia, quarterly).", "coin": "USDC"},
-    {"type": "Backing", "text": "Which stablecoin reserves include Bitcoin as a backing asset?", "correct": "USDT", "wrongs": ["USDC", "USD1", "PYUSD"], "explanation": "USDT uniquely includes Bitcoin and gold in its reserve assets, unlike other fiat-backed stables.", "coin": "USDT"},
-    {"type": "Backing", "text": "Which stablecoin is backed by 'nothing' in the traditional sense — only derivatives positions?", "correct": "USDe", "wrongs": ["USDC", "DAI", "USD0"], "explanation": "USDe has no dollar reserves, no Treasuries, no collateral — only spot + short futures positions.", "coin": "USDe"},
-    {"type": "Backing", "text": "What collateral types does GHO accept on Aave V3?", "correct": "ETH, USDC, USDT, wBTC, and other Aave-supported assets", "wrongs": ["Only ETH", "Only stablecoins", "Only wBTC and ETH"], "explanation": "GHO can be minted against any Aave V3 supported collateral.", "coin": "GHO"},
-    {"type": "Backing", "text": "What makes USD0's backing different from USDC's?", "correct": "USD0 uses tokenized T-Bills on-chain; USDC holds cash/Treasuries off-chain", "wrongs": ["They use the same backing model", "USD0 is algorithmic; USDC is fiat-backed", "USD0 is backed by crypto; USDC by dollars"], "explanation": "USD0's T-Bills are tokenized on-chain from BlackRock/Hashnote/Ondo. USDC's Treasuries are off-chain.", "coin": "USD0"},
-    {"type": "Backing", "text": "How many pools did xUSD's leveraged farming strategy span?", "correct": "50+", "wrongs": ["5-10", "1-3", "100+"], "explanation": "xUSD deployed capital across 50+ liquidity pools via leveraged farming strategies.", "coin": "xUSD"},
-
-    {"type": "Type", "text": "Which of these is a protocol-native stablecoin (minted by the protocol itself)?", "correct": "GHO (Aave)", "wrongs": ["USDC (Circle)", "USDT (Tether)", "USD1 (WLFI)"], "explanation": "GHO is minted directly by users on Aave V3. USDC/USDT/USD1 are issued by companies.", "coin": "GHO"},
-    {"type": "Type", "text": "Which of these is a yield-bearing wrapper token?", "correct": "sUSDe", "wrongs": ["USDC", "USDT", "USD1"], "explanation": "sUSDe is staked USDe — a wrapper that appreciates in value. The others are base tokens.", "coin": "sUSDe"},
-    {"type": "Type", "text": "Which stablecoin was originally algorithmic before pivoting to fiat-backed?", "correct": "FRAX", "wrongs": ["DAI", "USDC", "GHO"], "explanation": "FRAX was a hybrid algorithmic/USDC stablecoin, then pivoted to mostly USDC-backed after Terra's collapse.", "coin": "FRAX"},
-    {"type": "Type", "text": "Which stablecoin is classified as 'overcollateralized synthetic'?", "correct": "USDf (Falcon Finance)", "wrongs": ["USDe (Ethena)", "USDC (Circle)", "GHO (Aave)"], "explanation": "USDf is overcollateralized by stablecoins, BTC, ETH, and altcoins.", "coin": "USDf"},
-    {"type": "Type", "text": "How many stablecoins in the ecosystem are pegged to the Euro?", "correct": "One — EURCV", "wrongs": ["Two — EURCV and EURS", "Three", "None"], "explanation": "EURCV is the only EUR-pegged stablecoin in the curator ecosystem currently.", "coin": "EURCV"},
-
-    {"type": "Liquidity", "text": "Which stablecoin is integrated with Pendle for yield tokenization?", "correct": "USDf/sUSDf (Falcon Finance via PT-sUSDf)", "wrongs": ["USDC", "DAI", "GHO"], "explanation": "Falcon Finance's PT-sUSDf (Pendle Principal Token) is listed on Morpho.", "coin": "USDf"},
-    {"type": "Liquidity", "text": "What is Llamalend?", "correct": "Curve's lending platform where crvUSD is used", "wrongs": ["A competing stablecoin", "A restaking protocol", "An oracle service"], "explanation": "Llamalend is Curve Finance's lending platform, complementing crvUSD.", "coin": "crvUSD"},
-    {"type": "Liquidity", "text": "Which stablecoin was the first to be supported on Morpho's lending markets?", "correct": "PYUSD", "wrongs": ["USDC", "DAI", "USDT"], "explanation": "Morpho was the first lending platform to support PYUSD.", "coin": "PYUSD"},
-    {"type": "Liquidity", "text": "Where does USR have ~32% allocation in some vaults?", "correct": "Morpho", "wrongs": ["Aave", "Compound", "Euler"], "explanation": "USR comprises about 32% of allocation in some Morpho vaults.", "coin": "USR"},
-    {"type": "Liquidity", "text": "Which stablecoin launched a 'World Liberty Markets' lending platform?", "correct": "USD1 (on Dolomite)", "wrongs": ["USDC (on Morpho)", "GHO (on Aave)", "USDe (on Ethena)"], "explanation": "World Liberty Financial launched World Liberty Markets on Dolomite infrastructure for USD1.", "coin": "USD1"},
-    {"type": "Liquidity", "text": "Flux Finance is a liquidity venue for which stablecoin?", "correct": "USDY (Ondo Finance)", "wrongs": ["USDM", "USDC", "GHO"], "explanation": "Flux Finance is an Ondo-associated lending platform where USDY is used.", "coin": "USDY"}
+  {
+    "type": "Supply",
+    "text": "What is the approximate circulating supply of USDY?",
+    "correct": "~$2B",
+    "wrongs": [
+      "~$5B",
+      "~$33B",
+      "~$50M"
+    ],
+    "explanation": "USDY has ~$2B in circulation.",
+    "coin": "USDY"
+  },
+  {
+    "type": "Supply",
+    "text": "What is the approximate circulating supply of EURCV?",
+    "correct": "~$190M",
+    "wrongs": [
+      "~$500M",
+      "~$5B",
+      "~$1.5B"
+    ],
+    "explanation": "EURCV has ~$190M — small but institutional-grade (Societe Generale).",
+    "coin": "EURCV"
+  },
+  {
+    "type": "Supply",
+    "text": "What is the approximate circulating supply of crvUSD?",
+    "correct": "~$261M",
+    "wrongs": [
+      "~$5B",
+      "~$500M",
+      "~$33B"
+    ],
+    "explanation": "crvUSD has ~$261M in circulation.",
+    "coin": "crvUSD"
+  },
+  {
+    "type": "Supply",
+    "text": "What is the approximate circulating supply of USR?",
+    "correct": "~$563K",
+    "wrongs": [
+      "~$500M",
+      "~$6B",
+      "~$1.5B"
+    ],
+    "explanation": "USR (Resolv) has ~$50M — early stage.",
+    "coin": "USR"
+  },
+  {
+    "type": "Supply",
+    "text": "What is the approximate circulating supply of USDf?",
+    "correct": "~$1B",
+    "wrongs": [
+      "~$50M",
+      "~$6B",
+      "~$33B"
+    ],
+    "explanation": "USDf (Falcon Finance) has ~$300M in circulation.",
+    "coin": "USDf"
+  },
+  {
+    "type": "Supply",
+    "text": "What is the approximate circulating supply of scUSD?",
+    "correct": "~$30M",
+    "wrongs": [
+      "~$500M",
+      "~$2B",
+      "~$300M"
+    ],
+    "explanation": "scUSD (Rings Protocol) has ~$30M — Sonic ecosystem.",
+    "coin": "scUSD"
+  },
+  {
+    "type": "Supply",
+    "text": "Which stablecoin has the second-largest circulating supply?",
+    "correct": "USDC (~$75B)",
+    "wrongs": [
+      "DAI (~$5B)",
+      "USDe (~$6B)",
+      "USD1 ($3.4B)"
+    ],
+    "explanation": "USDC at ~$75B is second only to USDT (~$140B).",
+    "coin": "USDC"
+  },
+  {
+    "type": "Supply",
+    "text": "Which is the largest synthetic stablecoin by supply?",
+    "correct": "USDe (~$5B)",
+    "wrongs": [
+      "USR (~$50M)",
+      "USDf (~$300M)",
+      "crvUSD (~$100M)"
+    ],
+    "explanation": "USDe is the largest synthetic stablecoin at ~$6B+.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Supply",
+    "text": "Which stablecoin's supply is declining as it's being sunset?",
+    "correct": "USDM",
+    "wrongs": [
+      "USDC",
+      "DAI",
+      "FRAX"
+    ],
+    "explanation": "USDM (Mountain Protocol) is being sunset after Anchorage Digital acquisition.",
+    "coin": "USDM"
+  },
+  {
+    "type": "Supply",
+    "text": "Which stablecoin's supply is declining as its replacement (USDS) grows?",
+    "correct": "DAI",
+    "wrongs": [
+      "USDC",
+      "USDT",
+      "FRAX"
+    ],
+    "explanation": "DAI supply is declining as users migrate to USDS under the Sky Protocol rebrand.",
+    "coin": "DAI"
+  },
+  {
+    "type": "Supply",
+    "text": "USDT's supply is approximately how many times larger than USDC's?",
+    "correct": "~2x (~$183B vs ~$75B)",
+    "wrongs": [
+      "~2x",
+      "~10x",
+      "About the same"
+    ],
+    "explanation": "USDT (~$183B) is roughly 2x larger than USDC (~$75B).",
+    "coin": "USDT"
+  },
+  {
+    "type": "People",
+    "text": "Who is Conor Ryder?",
+    "correct": "Head of Research at Ethena",
+    "wrongs": [
+      "CEO of Circle",
+      "Founder of Liquity",
+      "CTO of Aave"
+    ],
+    "explanation": "Conor Ryder is the Head of Research at Ethena (USDe issuer).",
+    "coin": "USDe"
+  },
+  {
+    "type": "People",
+    "text": "Who is Rick Pardoe?",
+    "correct": "Co-founder of Liquity Protocol (LUSD)",
+    "wrongs": [
+      "Founder of Curve Finance",
+      "CEO of Tether",
+      "Co-founder of Ethena"
+    ],
+    "explanation": "Rick Pardoe co-founded Liquity Protocol alongside Robert Lauko.",
+    "coin": "LUSD"
+  },
+  {
+    "type": "People",
+    "text": "Who is Dante Disparte?",
+    "correct": "Chief Strategy Officer of Circle (USDC)",
+    "wrongs": [
+      "CEO of Tether",
+      "Founder of Aave",
+      "CTO of Paxos"
+    ],
+    "explanation": "Dante Disparte is the CSO of Circle.",
+    "coin": "USDC"
+  },
+  {
+    "type": "People",
+    "text": "Who is Adli Takkal Bataille?",
+    "correct": "Co-founder of Usual Protocol (USD0)",
+    "wrongs": [
+      "Founder of Curve Finance",
+      "CEO of Ondo Finance",
+      "CTO of Ethena"
+    ],
+    "explanation": "Adli Takkal Bataille co-founded Usual Protocol alongside Pierre Person.",
+    "coin": "USD0"
+  },
+  {
+    "type": "People",
+    "text": "Who is Sam MacPherson?",
+    "correct": "Spark Protocol lead (Sky subDAO)",
+    "wrongs": [
+      "Founder of Ethena",
+      "CEO of Morpho",
+      "CTO of Aave"
+    ],
+    "explanation": "Sam MacPherson leads Spark Protocol, Sky's lending subDAO that allocated $1.1B to Ethena.",
+    "coin": "USDS"
+  },
+  {
+    "type": "People",
+    "text": "Dan Schulman is associated with which stablecoin?",
+    "correct": "PYUSD (former PayPal CEO who launched it)",
+    "wrongs": [
+      "USDC (Circle CEO)",
+      "USDT (Tether CEO)",
+      "USD1 (WLFI founder)"
+    ],
+    "explanation": "Dan Schulman was the PayPal CEO who launched PYUSD.",
+    "coin": "PYUSD"
+  },
+  {
+    "type": "People",
+    "text": "Jean-Louis van der Velde held which role at Tether?",
+    "correct": "Former CEO (stepped down 2023)",
+    "wrongs": [
+      "Current CEO",
+      "CFO",
+      "Chief Legal Officer"
+    ],
+    "explanation": "Jean-Louis van der Velde was Tether's CEO until 2023, when Paolo Ardoino took over.",
+    "coin": "USDT"
+  },
+  {
+    "type": "People",
+    "text": "Zach Witkoff co-founded which stablecoin project?",
+    "correct": "World Liberty Financial (USD1)",
+    "wrongs": [
+      "Circle (USDC)",
+      "Ethena (USDe)",
+      "Usual Protocol (USD0)"
+    ],
+    "explanation": "Zach Witkoff is a co-founder of World Liberty Financial.",
+    "coin": "USD1"
+  },
+  {
+    "type": "People",
+    "text": "Chase Herro co-founded which stablecoin project?",
+    "correct": "World Liberty Financial (USD1)",
+    "wrongs": [
+      "Falcon Finance (USDf)",
+      "Resolv Labs (USR)",
+      "Frax Finance (FRAX)"
+    ],
+    "explanation": "Chase Herro is a co-founder of World Liberty Financial.",
+    "coin": "USD1"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which chains is USDC deployed on?",
+    "correct": "Ethereum, Base, Solana, Arbitrum, Optimism, Polygon, Avalanche",
+    "wrongs": [
+      "Ethereum only",
+      "Ethereum and Tron only",
+      "Ethereum, BNB Chain, and Tron"
+    ],
+    "explanation": "USDC is one of the most widely deployed stablecoins across major chains.",
+    "coin": "USDC"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which chain has the most USDT activity outside Ethereum?",
+    "correct": "Tron",
+    "wrongs": [
+      "Solana",
+      "BNB Chain",
+      "Arbitrum"
+    ],
+    "explanation": "Tron is the dominant non-Ethereum chain for USDT — more USDT on Tron than Ethereum.",
+    "coin": "USDT"
+  },
+  {
+    "type": "Liquidity",
+    "text": "USDS was deployed on which non-EVM chain in Nov 2024?",
+    "correct": "Solana",
+    "wrongs": [
+      "Tron",
+      "Sui",
+      "Aptos"
+    ],
+    "explanation": "USDS deployed on Solana in November 2024 with incentives for liquidity providers.",
+    "coin": "USDS"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which DeFi protocol is the primary liquidity venue for GHO?",
+    "correct": "Aave V3 (where it's minted)",
+    "wrongs": [
+      "Morpho",
+      "Compound",
+      "Uniswap"
+    ],
+    "explanation": "GHO is minted natively on Aave V3. Secondary liquidity on Balancer.",
+    "coin": "GHO"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Where is EURCV primarily used in DeFi?",
+    "correct": "Morpho vault curated by Steakhouse for Safe",
+    "wrongs": [
+      "Aave V3 as collateral",
+      "Curve liquidity pools",
+      "Compound markets"
+    ],
+    "explanation": "EURCV's main DeFi use is through the Steakhouse-curated Morpho vault for Safe wallet.",
+    "coin": "EURCV"
+  },
+  {
+    "type": "Liquidity",
+    "text": "USDe is used as collateral on which major platforms?",
+    "correct": "Aave, Morpho, Spark, Curve, Pendle",
+    "wrongs": [
+      "Only Morpho",
+      "Only Aave and Compound",
+      "Only decentralized exchanges"
+    ],
+    "explanation": "USDe is one of the most widely accepted collateral assets across DeFi.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Liquidity",
+    "text": "On which chain is scUSD's underlying USDC farmed?",
+    "correct": "Ethereum (via Veda BoringVaults)",
+    "wrongs": [
+      "Sonic",
+      "Arbitrum",
+      "Solana"
+    ],
+    "explanation": "scUSD lives on Sonic but the underlying USDC is sent to Ethereum for DeFi farming.",
+    "coin": "scUSD"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which lending platforms was xUSD used on before collapse?",
+    "correct": "Morpho, Euler, Silo, and Gearbox",
+    "wrongs": [
+      "Only Aave",
+      "Only Morpho and Compound",
+      "Only Euler"
+    ],
+    "explanation": "xUSD spread across 4+ lending protocols, amplifying contagion.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which stablecoin can be minted on Fraxtal (Frax's own L2)?",
+    "correct": "FRAX",
+    "wrongs": [
+      "USDC",
+      "DAI",
+      "crvUSD"
+    ],
+    "explanation": "Fraxtal is Frax Finance's own L2 chain.",
+    "coin": "FRAX"
+  },
+  {
+    "type": "Liquidity",
+    "text": "USDY is deployed on which non-EVM chains?",
+    "correct": "Solana, Sui, Aptos",
+    "wrongs": [
+      "Tron, BNB Chain",
+      "Only Ethereum",
+      "Bitcoin, Cosmos"
+    ],
+    "explanation": "USDY has expanded beyond Ethereum to Solana, Mantle, Sui, and Aptos.",
+    "coin": "USDY"
+  },
+  {
+    "type": "Liquidity",
+    "text": "FDUSD is deployed on which chains?",
+    "correct": "Ethereum and BNB Chain",
+    "wrongs": [
+      "Ethereum only",
+      "Ethereum, Solana, and Tron",
+      "BNB Chain only"
+    ],
+    "explanation": "FDUSD is primarily on Ethereum and BNB Chain (Binance ecosystem).",
+    "coin": "FDUSD"
+  },
+  {
+    "type": "Yield",
+    "text": "Which yield-bearing stablecoin distributes yield via rebasing (balance increases)?",
+    "correct": "USDM",
+    "wrongs": [
+      "sUSDe",
+      "sUSDS",
+      "USDY"
+    ],
+    "explanation": "USDM is a rebasing ERC-20 — your balance increases daily. Others use wrapper appreciation.",
+    "coin": "USDM"
+  },
+  {
+    "type": "Yield",
+    "text": "Which stablecoin earns yield from perpetual futures funding rates?",
+    "correct": "sUSDe (Ethena)",
+    "wrongs": [
+      "sUSDS (Sky)",
+      "USDY (Ondo)",
+      "USDM (Mountain)"
+    ],
+    "explanation": "sUSDe yield comes from funding rates on Binance/Bybit/OKX + ETH staking.",
+    "coin": "sUSDe"
+  },
+  {
+    "type": "Yield",
+    "text": "Which stablecoin earns yield from borrower interest in the Sky Protocol?",
+    "correct": "sUSDS",
+    "wrongs": [
+      "sUSDe",
+      "USDY",
+      "USDM"
+    ],
+    "explanation": "sUSDS earns from Sky Protocol lending revenue and RWA yields.",
+    "coin": "sUSDS"
+  },
+  {
+    "type": "Yield",
+    "text": "Which stablecoin earns yield from US Treasury bills via Ondo Finance?",
+    "correct": "USDY",
+    "wrongs": [
+      "USDM",
+      "sUSDS",
+      "sUSDe"
+    ],
+    "explanation": "USDY earns ~3.6% APY from short-term Treasuries managed by Ondo.",
+    "coin": "USDY"
+  },
+  {
+    "type": "Yield",
+    "text": "What unique risk do stkGHO holders face?",
+    "correct": "Slashing — staked amount can be cut during protocol deficit",
+    "wrongs": [
+      "4-year lockup",
+      "Negative yield rates",
+      "Impermanent loss"
+    ],
+    "explanation": "stkGHO is in Aave's Umbrella safety module — stakers face slashing risk.",
+    "coin": "GHO"
+  },
+  {
+    "type": "Yield",
+    "text": "During bear markets, what can happen to sUSDe yield?",
+    "correct": "It can go negative (protocol loses money on funding rates)",
+    "wrongs": [
+      "It stays constant at 5%",
+      "It automatically converts to USDC",
+      "The token gets burned"
+    ],
+    "explanation": "When funding rates turn negative in bear markets, Ethena's insurance fund covers losses — but it's finite.",
+    "coin": "sUSDe"
+  },
+  {
+    "type": "Yield",
+    "text": "How does USDY generate its ~4.25% yield?",
+    "correct": "From underlying short-term Treasury and bank deposit returns",
+    "wrongs": [
+      "From DeFi lending revenue",
+      "From perpetual futures funding rates",
+      "From liquidity mining rewards"
+    ],
+    "explanation": "USDY is backed by Treasuries and bank deposits — the yield is simply the Treasury return.",
+    "coin": "USDY"
+  },
+  {
+    "type": "Yield",
+    "text": "What is the approximate yield range for sUSDe in favorable (bull) markets?",
+    "correct": "15-25% APY",
+    "wrongs": [
+      "4-5% APY",
+      "8-10% APY",
+      "50-100% APY"
+    ],
+    "explanation": "sUSDe can reach 15-25% when funding rates are high in bull markets.",
+    "coin": "sUSDe"
+  },
+  {
+    "type": "Yield",
+    "text": "sFRAX earns yield from what sources?",
+    "correct": "DeFi protocol revenue + Treasury yields",
+    "wrongs": [
+      "Funding rates from futures",
+      "Ethereum staking rewards",
+      "Liquidity mining incentives only"
+    ],
+    "explanation": "sFRAX yield combines DeFi revenue and Treasury yields via FinresPBC.",
+    "coin": "FRAX"
+  },
+  {
+    "type": "Custody",
+    "text": "Which firm provides custody for USDC and also co-created it?",
+    "correct": "Coinbase",
+    "wrongs": [
+      "BitGo",
+      "Fireblocks",
+      "Anchorage"
+    ],
+    "explanation": "Coinbase co-created USDC with Circle via the Centre Consortium.",
+    "coin": "USDC"
+  },
+  {
+    "type": "Custody",
+    "text": "Who manages the USDC reserve investment fund?",
+    "correct": "BlackRock",
+    "wrongs": [
+      "Fidelity",
+      "Cantor Fitzgerald",
+      "BNY Mellon"
+    ],
+    "explanation": "BlackRock manages the Circle Reserve Fund (USDC reserves).",
+    "coin": "USDC"
+  },
+  {
+    "type": "Custody",
+    "text": "What role does BNY Mellon play for USDC?",
+    "correct": "Custody provider for reserves",
+    "wrongs": [
+      "Attestation provider",
+      "Reserve manager",
+      "Token issuer"
+    ],
+    "explanation": "BNY Mellon provides custody services for USDC reserves alongside BlackRock's management.",
+    "coin": "USDC"
+  },
+  {
+    "type": "Custody",
+    "text": "Which firm provides attestations for USDC — Deloitte or BDO?",
+    "correct": "Deloitte (monthly)",
+    "wrongs": [
+      "BDO Italia (quarterly)",
+      "KPMG (annual)",
+      "PwC (semi-annual)"
+    ],
+    "explanation": "Deloitte provides monthly attestations for USDC. BDO Italia does USDT's quarterly attestations.",
+    "coin": "USDC"
+  },
+  {
+    "type": "Custody",
+    "text": "What is the frequency of USDC reserve attestations?",
+    "correct": "Monthly",
+    "wrongs": [
+      "Quarterly",
+      "Annual",
+      "Weekly"
+    ],
+    "explanation": "USDC has monthly reserve attestations by Deloitte.",
+    "coin": "USDC"
+  },
+  {
+    "type": "Custody",
+    "text": "What is the frequency of USDT reserve attestations?",
+    "correct": "Quarterly",
+    "wrongs": [
+      "Monthly",
+      "Annual",
+      "None"
+    ],
+    "explanation": "USDT has quarterly attestations by BDO Italia — notably NOT full audits.",
+    "coin": "USDT"
+  },
+  {
+    "type": "Custody",
+    "text": "Which entity would liquidate USDY's portfolio if Ondo defaults?",
+    "correct": "Ankura Trust",
+    "wrongs": [
+      "BlackRock",
+      "Fidelity",
+      "The SEC"
+    ],
+    "explanation": "Ankura Trust is the collateral agent — they liquidate assets to repay USDY holders if Ondo defaults.",
+    "coin": "USDY"
+  },
+  {
+    "type": "Custody",
+    "text": "Where does Ethena custody its spot ETH/BTC?",
+    "correct": "Off-exchange at Copper.co, Ceffu, Fireblocks",
+    "wrongs": [
+      "Directly on Binance",
+      "In Aave V3",
+      "In a multisig wallet"
+    ],
+    "explanation": "Ethena uses off-exchange custody — assets never actually sit on the exchanges they trade futures on.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Partner",
+    "text": "Spark Protocol allocated $1.1B to which stablecoin issuer?",
+    "correct": "Ethena (USDe/sUSDe)",
+    "wrongs": [
+      "Circle (USDC)",
+      "Usual Protocol (USD0)",
+      "Ondo Finance (USDY)"
+    ],
+    "explanation": "Spark (Sky's subDAO) allocated $1.1B to Ethena's USDe and sUSDe.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Partner",
+    "text": "Which custody firm holds USD1's reserves?",
+    "correct": "BitGo Trust Company",
+    "wrongs": [
+      "Coinbase Custody",
+      "Fireblocks",
+      "Copper.co"
+    ],
+    "explanation": "BitGo Trust Company (regulated South Dakota trust) custodies USD1 reserves.",
+    "coin": "USD1"
+  },
+  {
+    "type": "Partner",
+    "text": "Which investment firm manages USD1's reserve assets?",
+    "correct": "Fidelity Investments",
+    "wrongs": [
+      "BlackRock",
+      "Vanguard",
+      "Goldman Sachs"
+    ],
+    "explanation": "Fidelity manages USD1's reserve portfolio. BitGo provides custody.",
+    "coin": "USD1"
+  },
+  {
+    "type": "Partner",
+    "text": "Which company acquired Mountain Protocol?",
+    "correct": "Anchorage Digital",
+    "wrongs": [
+      "Coinbase",
+      "BitGo",
+      "Circle"
+    ],
+    "explanation": "Anchorage Digital acquired Mountain Protocol in May 2025.",
+    "coin": "USDM"
+  },
+  {
+    "type": "Partner",
+    "text": "FinresPBC is associated with which stablecoin?",
+    "correct": "FRAX (Frax Finance's RWA subsidiary)",
+    "wrongs": [
+      "USDC (Circle's subsidiary)",
+      "USD0 (Usual's subsidiary)",
+      "USDY (Ondo's subsidiary)"
+    ],
+    "explanation": "FinresPBC is Frax Finance's US LLC for managing Treasury exposure.",
+    "coin": "FRAX"
+  },
+  {
+    "type": "Partner",
+    "text": "Prescient Assurance provides attestations for which stablecoin?",
+    "correct": "FDUSD",
+    "wrongs": [
+      "USDC",
+      "USDT",
+      "PYUSD"
+    ],
+    "explanation": "Prescient Assurance provides attestations for FDUSD (First Digital Trust).",
+    "coin": "FDUSD"
+  },
+  {
+    "type": "Comparison",
+    "text": "Which has a larger circulating supply: USDe or DAI?",
+    "correct": "USDe (~$5B vs ~$5B)",
+    "wrongs": [
+      "DAI (~$5B vs ~$3B)",
+      "They're about equal",
+      "DAI (~$10B vs ~$6B)"
+    ],
+    "explanation": "USDe at ~$6B+ has surpassed DAI at ~$5B.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Comparison",
+    "text": "Which has a larger circulating supply: USD1 or FDUSD?",
+    "correct": "USD1 (~$4B vs ~$325M)",
+    "wrongs": [
+      "FDUSD (~$2B vs ~$500M)",
+      "They're about equal",
+      "FDUSD ($5B vs $3.4B)"
+    ],
+    "explanation": "USD1 at $3.4B+ is larger than FDUSD at ~$2B.",
+    "coin": "USD1"
+  },
+  {
+    "type": "Comparison",
+    "text": "Which yields more: USDY or USDM?",
+    "correct": "USDM (~5% vs ~4.25%)",
+    "wrongs": [
+      "USDY (~4.25% vs ~3%)",
+      "They're about equal",
+      "USDY (~8% vs ~5%)"
+    ],
+    "explanation": "USDM yields ~5% APY vs USDY's ~4.25% APY. Both from Treasury yields.",
+    "coin": "USDM"
+  },
+  {
+    "type": "Comparison",
+    "text": "Which yields more: sUSDe (bull market) or stkGHO?",
+    "correct": "sUSDe (15-25% vs ~8.4%)",
+    "wrongs": [
+      "stkGHO (~8.4% vs ~5%)",
+      "They're about equal",
+      "stkGHO (~20% vs ~15%)"
+    ],
+    "explanation": "sUSDe can reach 15-25% in bull markets. stkGHO is ~8.4% but more stable.",
+    "coin": "sUSDe"
+  },
+  {
+    "type": "Comparison",
+    "text": "Which stablecoin has the higher minimum collateral ratio: LUSD or GHO?",
+    "correct": "GHO (~130% vs 110%)",
+    "wrongs": [
+      "LUSD (110% vs ~100%)",
+      "They're the same",
+      "LUSD (150% vs 130%)"
+    ],
+    "explanation": "GHO requires ~130% collateral on Aave. LUSD only requires 110% (ETH only).",
+    "coin": "LUSD"
+  },
+  {
+    "type": "Comparison",
+    "text": "Which is newer: USDe or USR?",
+    "correct": "USR (Resolv Labs)",
+    "wrongs": [
+      "USDe (Ethena)",
+      "They launched the same year",
+      "Neither — both are pre-2023"
+    ],
+    "explanation": "USR is a smaller, newer competitor to Ethena's USDe using the same delta-neutral model.",
+    "coin": "USR"
+  },
+  {
+    "type": "Mechanism",
+    "text": "How does Ethena make money when funding rates are positive?",
+    "correct": "Short futures positions receive funding payments from longs",
+    "wrongs": [
+      "They charge fees on USDe minting",
+      "They earn staking rewards on BTC",
+      "They sell governance tokens"
+    ],
+    "explanation": "In positive funding rate environments, shorts (Ethena) get paid by longs — this is the primary yield source.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Mechanism",
+    "text": "What happens to USDe if all three major exchanges (Binance, Bybit, OKX) go down?",
+    "correct": "The hedging position breaks — USDe is exposed to spot price risk",
+    "wrongs": [
+      "Nothing — assets are in off-exchange custody",
+      "USDe automatically converts to USDC",
+      "Insurance fund covers all losses"
+    ],
+    "explanation": "Exchange counterparty risk is the key concern — if exchanges fail, the short futures positions are lost.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Mechanism",
+    "text": "Why is LUSD interest-free?",
+    "correct": "Borrowers pay a one-time fee instead of ongoing interest",
+    "wrongs": [
+      "It's subsidized by Ethereum staking rewards",
+      "There's a governance vote to set rates to 0",
+      "The protocol charges no fees at all"
+    ],
+    "explanation": "LUSD charges a one-time borrowing fee. No ongoing interest — that's the Liquity innovation.",
+    "coin": "LUSD"
+  },
+  {
+    "type": "Mechanism",
+    "text": "What makes USD0++ different from USD0?",
+    "correct": "USD0++ is staked USD0 with a 4-year lockup for yield",
+    "wrongs": [
+      "USD0++ is a newer version of USD0",
+      "USD0++ is backed by different assets",
+      "USD0++ is on a different chain"
+    ],
+    "explanation": "USD0++ is staked USD0 with a 4-year commitment. The lockup was the source of the Jan 2025 depeg.",
+    "coin": "USD0"
+  },
+  {
+    "type": "Mechanism",
+    "text": "How do crvUSD Peg Keepers work?",
+    "correct": "They mint crvUSD when price is high and burn it when price is low",
+    "wrongs": [
+      "They adjust collateral ratios automatically",
+      "They buy/sell ETH to maintain the peg",
+      "They use oracle price feeds to rebase supply"
+    ],
+    "explanation": "Peg Keepers trade crvUSD against USDC/USDT/USDP pools to maintain the peg.",
+    "coin": "crvUSD"
+  },
+  {
+    "type": "Mechanism",
+    "text": "What is 'off-exchange custody' in Ethena's context?",
+    "correct": "Assets held at custodians (Copper/Ceffu), only margin posted to exchanges — never full transfer",
+    "wrongs": [
+      "Assets stored in cold wallets on each exchange",
+      "Assets held in Aave as collateral",
+      "Assets distributed across multiple multisig wallets"
+    ],
+    "explanation": "Ethena delegates but never transfers custody — exchange risk is reduced because assets aren't ON the exchange.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Mechanism",
+    "text": "What was the 'recursive collateral' problem with xUSD?",
+    "correct": "xUSD was used as collateral to borrow more assets, then redeposited — circular leverage",
+    "wrongs": [
+      "xUSD had no collateral backing at all",
+      "Multiple protocols independently backed xUSD",
+      "xUSD was backed by other stablecoins only"
+    ],
+    "explanation": "Like writing an IOU, using that IOU as collateral for a loan, then using the loan to write more IOUs.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Mechanism",
+    "text": "Why specifically did deUSD depeg, given its delta-neutral design was theoretically sound?",
+    "correct": "The issuer secretly concentrated 65% of backing in a single yield source that failed",
+    "wrongs": [
+      "Funding rates went deeply negative",
+      "A smart contract bug was exploited",
+      "Ethereum dropped 50% and broke the hedge"
+    ],
+    "explanation": "deUSD's delta-neutral model was fine — the failure was Elixir's undisclosed concentration in Stream Finance.",
+    "coin": "deUSD"
+  },
+  {
+    "type": "Regulation",
+    "text": "Which stablecoin complies with Europe's MiCA regulation?",
+    "correct": "EURCV",
+    "wrongs": [
+      "USDC",
+      "USDT",
+      "PYUSD"
+    ],
+    "explanation": "EURCV (SocGen-FORGE) is the first major MiCA-compliant stablecoin.",
+    "coin": "EURCV"
+  },
+  {
+    "type": "Regulation",
+    "text": "Which stablecoin is issued by a NYDFS-regulated trust company?",
+    "correct": "PYUSD (Paxos Trust)",
+    "wrongs": [
+      "USDT (Tether)",
+      "USD1 (BitGo)",
+      "USDe (Ethena)"
+    ],
+    "explanation": "Paxos Trust Company is regulated by NYDFS (New York).",
+    "coin": "PYUSD"
+  },
+  {
+    "type": "Regulation",
+    "text": "Which stablecoin is licensed by the Bermuda Monetary Authority?",
+    "correct": "USDM (Mountain Protocol)",
+    "wrongs": [
+      "USDY (Ondo)",
+      "EURCV (SocGen)",
+      "PYUSD (Paxos)"
+    ],
+    "explanation": "Mountain Protocol holds BMA license #202302512.",
+    "coin": "USDM"
+  },
+  {
+    "type": "Regulation",
+    "text": "Which stablecoin's custodian is a regulated South Dakota trust?",
+    "correct": "USD1 (BitGo Trust Company)",
+    "wrongs": [
+      "USDC (Circle)",
+      "USDT (Tether)",
+      "PYUSD (Paxos)"
+    ],
+    "explanation": "BitGo Trust Company is a regulated SD trust that custodies USD1 reserves.",
+    "coin": "USD1"
+  },
+  {
+    "type": "Regulation",
+    "text": "Which stablecoin has zero governance and fully immutable contracts?",
+    "correct": "LUSD (Liquity)",
+    "wrongs": [
+      "DAI (MakerDAO)",
+      "GHO (Aave)",
+      "crvUSD (Curve)"
+    ],
+    "explanation": "LUSD is the only stablecoin with immutable contracts and no governance at all.",
+    "coin": "LUSD"
+  },
+  {
+    "type": "Regulation",
+    "text": "Tether's reserve attestations are provided by which firm?",
+    "correct": "BDO Italia",
+    "wrongs": [
+      "Deloitte",
+      "KPMG",
+      "Ernst & Young"
+    ],
+    "explanation": "BDO Italia provides quarterly attestations for Tether (not full audits).",
+    "coin": "USDT"
+  },
+  {
+    "type": "Regulation",
+    "text": "Circle's USDC attestations are provided by which firm?",
+    "correct": "Deloitte",
+    "wrongs": [
+      "BDO Italia",
+      "PricewaterhouseCoopers",
+      "Grant Thornton"
+    ],
+    "explanation": "Deloitte provides monthly attestations for USDC reserves.",
+    "coin": "USDC"
+  },
+  {
+    "type": "Regulation",
+    "text": "Which stablecoin issuer is associated with Bitfinex?",
+    "correct": "Tether (USDT)",
+    "wrongs": [
+      "Circle (USDC)",
+      "Paxos (PYUSD)",
+      "First Digital (FDUSD)"
+    ],
+    "explanation": "Tether and Bitfinex share ownership through iFinex Inc.",
+    "coin": "USDT"
+  },
+  {
+    "type": "Crisis",
+    "text": "What happened to MEV Capital after the Stream Finance collapse?",
+    "correct": "80% AUM collapse, CEO stepped back, absorbed by Belem Capital",
+    "wrongs": [
+      "Continued operating normally",
+      "Merged with Re7 Labs",
+      "Shut down completely"
+    ],
+    "explanation": "MEV Capital lost 80% AUM ($1.5B to $300M), CEO Laurent Bourquin stepped back, 10/15 staff departed.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "What law firm did Re7 Labs use to send a C&D to a Stream Finance whistleblower?",
+    "correct": "Pillsbury Winthrop Shaw Pittman LLP",
+    "wrongs": [
+      "Sullivan & Cromwell",
+      "Skadden Arps",
+      "Davis Polk"
+    ],
+    "explanation": "Re7 used Pillsbury Winthrop to threaten a whistleblower who exposed their risk management failures.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "What action did Gauntlet take during the Stream Finance crisis?",
+    "correct": "Paused USDC, USDS, and USDT Comet markets on Compound",
+    "wrongs": [
+      "Withdrew all funds from Morpho",
+      "Shut down all vaults",
+      "Filed for bankruptcy protection"
+    ],
+    "explanation": "Gauntlet paused Compound markets due to liquidity crunch from Elixir's deUSD/sdeUSD depeg.",
+    "coin": "deUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "How much did K3 Capital's Neutrl Labs pre-deposits gain during the xUSD crisis?",
+    "correct": "$250K gain",
+    "wrongs": [
+      "$2M loss",
+      "$0 (break even)",
+      "$10M loss"
+    ],
+    "explanation": "K3 avoided xUSD directly — their Neutrl Labs $75M pre-deposits actually gained $250K. But deUSD hit them separately.",
+    "coin": "deUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "What did Block Analitica do during the Stream Finance crisis?",
+    "correct": "Immediately set risk caps to zero for Stream-related yield sources",
+    "wrongs": [
+      "Lost $15M in xUSD exposure",
+      "Paused all vault operations",
+      "Had no systems in place to respond"
+    ],
+    "explanation": "Block Analitica responded swiftly via Lazy Summer Protocol — zero risk caps for Stream-related sources.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "Which curator handled the crisis exemplarily with a 24hr post-mortem and made depositors whole?",
+    "correct": "Clearstar Labs",
+    "wrongs": [
+      "Re7 Labs",
+      "MEV Capital",
+      "Gauntlet"
+    ],
+    "explanation": "Clearstar Labs had a separate ~$49K incident but published a 24hr post-mortem and made all depositors whole.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "What borrowing rate did affected vaults reach during the Stream Finance crisis?",
+    "correct": "800%",
+    "wrongs": [
+      "100%",
+      "50%",
+      "2000%"
+    ],
+    "explanation": "Borrowing rates hit 800% in affected vaults during the xUSD/Stream Finance crisis.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "What governance action did Lista DAO take during the Stream crisis?",
+    "correct": "Emergency vote (LIP-022) to force liquidation of USDX market at Re7's request",
+    "wrongs": [
+      "Voted to ban Re7 from the protocol",
+      "Voted to freeze all withdrawals",
+      "No governance action was taken"
+    ],
+    "explanation": "Lista DAO launched LIP-022 at Re7's own request as vault curator to force liquidate the USDX market.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Crisis",
+    "text": "How much in liquidation profits did Lista DAO return to affected suppliers?",
+    "correct": "$481,801",
+    "wrongs": [
+      "$93M",
+      "$2M",
+      "$27.4M"
+    ],
+    "explanation": "LIP-023 distributed $481,801 USD1 in liquidation profits back to affected vault suppliers.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Issuer",
+    "text": "Which stablecoin is issued by Aave's governance?",
+    "correct": "GHO",
+    "wrongs": [
+      "crvUSD",
+      "LUSD",
+      "USDe"
+    ],
+    "explanation": "GHO is governed by Aave DAO — minted against Aave V3 collateral.",
+    "coin": "GHO"
+  },
+  {
+    "type": "Issuer",
+    "text": "Which stablecoin is expected to be the default for Aave V4?",
+    "correct": "GHO",
+    "wrongs": [
+      "USDC",
+      "USDT",
+      "DAI"
+    ],
+    "explanation": "GHO is Aave's native stablecoin and will likely be the default for V4 Spokes.",
+    "coin": "GHO"
+  },
+  {
+    "type": "Issuer",
+    "text": "Which stablecoin issuer has its own L2 blockchain?",
+    "correct": "Frax Finance (Fraxtal)",
+    "wrongs": [
+      "Circle (USDC)",
+      "Ethena (USDe)",
+      "Aave (GHO)"
+    ],
+    "explanation": "Frax Finance operates Fraxtal, its own L2 chain.",
+    "coin": "FRAX"
+  },
+  {
+    "type": "Issuer",
+    "text": "Which stablecoin is a direct competitor to Ethena's USDe, using the same delta-neutral model?",
+    "correct": "USR (Resolv Labs)",
+    "wrongs": [
+      "crvUSD (Curve)",
+      "GHO (Aave)",
+      "FRAX (Frax Finance)"
+    ],
+    "explanation": "USR uses the same delta-neutral ETH strategy as USDe but is smaller and newer.",
+    "coin": "USR"
+  },
+  {
+    "type": "Issuer",
+    "text": "Sky Protocol replaced which token with SKY as its governance token?",
+    "correct": "MKR",
+    "wrongs": [
+      "AAVE",
+      "CRV",
+      "UNI"
+    ],
+    "explanation": "Sky Protocol retired MKR and launched SKY as the new governance token in May 2025.",
+    "coin": "USDS"
+  },
+  {
+    "type": "Issuer",
+    "text": "What is the relationship between DAI and USDS?",
+    "correct": "USDS is the replacement for DAI — same protocol, new brand (Sky Protocol)",
+    "wrongs": [
+      "They are competing stablecoins from different protocols",
+      "DAI is backed by USDS",
+      "USDS is a wrapper around DAI"
+    ],
+    "explanation": "MakerDAO rebranded to Sky Protocol. DAI is being migrated to USDS.",
+    "coin": "USDS"
+  },
+  {
+    "type": "Issuer",
+    "text": "Which stablecoin issuer is associated with Societe Generale?",
+    "correct": "SocGen-FORGE (EURCV)",
+    "wrongs": [
+      "Circle (USDC)",
+      "Paxos (PYUSD)",
+      "First Digital (FDUSD)"
+    ],
+    "explanation": "SocGen-FORGE is Societe Generale's blockchain subsidiary that issues EURCV.",
+    "coin": "EURCV"
+  },
+  {
+    "type": "Issuer",
+    "text": "What is Falcon Finance's relationship to DWF Labs?",
+    "correct": "DWF Labs is the seed investor and incubator",
+    "wrongs": [
+      "DWF Labs competes with Falcon Finance",
+      "No relationship",
+      "DWF Labs audits Falcon Finance"
+    ],
+    "explanation": "DWF Labs (Andrei Grachev) incubated and seed-funded Falcon Finance.",
+    "coin": "USDf"
+  },
+  {
+    "type": "Backing",
+    "text": "How often does USDC provide reserve attestations vs USDT?",
+    "correct": "USDC monthly, USDT quarterly",
+    "wrongs": [
+      "Both monthly",
+      "Both quarterly",
+      "USDC quarterly, USDT monthly"
+    ],
+    "explanation": "USDC (Deloitte, monthly) has more frequent attestations than USDT (BDO Italia, quarterly).",
+    "coin": "USDC"
+  },
+  {
+    "type": "Backing",
+    "text": "Which stablecoin reserves include Bitcoin as a backing asset?",
+    "correct": "USDT",
+    "wrongs": [
+      "USDC",
+      "USD1",
+      "PYUSD"
+    ],
+    "explanation": "USDT uniquely includes Bitcoin and gold in its reserve assets, unlike other fiat-backed stables.",
+    "coin": "USDT"
+  },
+  {
+    "type": "Backing",
+    "text": "Which stablecoin is backed by 'nothing' in the traditional sense — only derivatives positions?",
+    "correct": "USDe",
+    "wrongs": [
+      "USDC",
+      "DAI",
+      "USD0"
+    ],
+    "explanation": "USDe has no dollar reserves, no Treasuries, no collateral — only spot + short futures positions.",
+    "coin": "USDe"
+  },
+  {
+    "type": "Backing",
+    "text": "What collateral types does GHO accept on Aave V3?",
+    "correct": "ETH, USDC, USDT, wBTC, and other Aave-supported assets",
+    "wrongs": [
+      "Only ETH",
+      "Only stablecoins",
+      "Only wBTC and ETH"
+    ],
+    "explanation": "GHO can be minted against any Aave V3 supported collateral.",
+    "coin": "GHO"
+  },
+  {
+    "type": "Backing",
+    "text": "What makes USD0's backing different from USDC's?",
+    "correct": "USD0 uses tokenized T-Bills on-chain; USDC holds cash/Treasuries off-chain",
+    "wrongs": [
+      "They use the same backing model",
+      "USD0 is algorithmic; USDC is fiat-backed",
+      "USD0 is backed by crypto; USDC by dollars"
+    ],
+    "explanation": "USD0's T-Bills are tokenized on-chain from BlackRock/Hashnote/Ondo. USDC's Treasuries are off-chain.",
+    "coin": "USD0"
+  },
+  {
+    "type": "Backing",
+    "text": "How many pools did xUSD's leveraged farming strategy span?",
+    "correct": "50+",
+    "wrongs": [
+      "5-10",
+      "1-3",
+      "100+"
+    ],
+    "explanation": "xUSD deployed capital across 50+ liquidity pools via leveraged farming strategies.",
+    "coin": "xUSD"
+  },
+  {
+    "type": "Type",
+    "text": "Which of these is a protocol-native stablecoin (minted by the protocol itself)?",
+    "correct": "GHO (Aave)",
+    "wrongs": [
+      "USDC (Circle)",
+      "USDT (Tether)",
+      "USD1 (WLFI)"
+    ],
+    "explanation": "GHO is minted directly by users on Aave V3. USDC/USDT/USD1 are issued by companies.",
+    "coin": "GHO"
+  },
+  {
+    "type": "Type",
+    "text": "Which of these is a yield-bearing wrapper token?",
+    "correct": "sUSDe",
+    "wrongs": [
+      "USDC",
+      "USDT",
+      "USD1"
+    ],
+    "explanation": "sUSDe is staked USDe — a wrapper that appreciates in value. The others are base tokens.",
+    "coin": "sUSDe"
+  },
+  {
+    "type": "Type",
+    "text": "Which stablecoin was originally algorithmic before pivoting to fiat-backed?",
+    "correct": "FRAX",
+    "wrongs": [
+      "DAI",
+      "USDC",
+      "GHO"
+    ],
+    "explanation": "FRAX was a hybrid algorithmic/USDC stablecoin, then pivoted to mostly USDC-backed after Terra's collapse.",
+    "coin": "FRAX"
+  },
+  {
+    "type": "Type",
+    "text": "Which stablecoin is classified as 'overcollateralized synthetic'?",
+    "correct": "USDf (Falcon Finance)",
+    "wrongs": [
+      "USDe (Ethena)",
+      "USDC (Circle)",
+      "GHO (Aave)"
+    ],
+    "explanation": "USDf is overcollateralized by stablecoins, BTC, ETH, and altcoins.",
+    "coin": "USDf"
+  },
+  {
+    "type": "Type",
+    "text": "How many stablecoins in the ecosystem are pegged to the Euro?",
+    "correct": "One — EURCV",
+    "wrongs": [
+      "Two — EURCV and EURS",
+      "Three",
+      "None"
+    ],
+    "explanation": "EURCV is the only EUR-pegged stablecoin in the curator ecosystem currently.",
+    "coin": "EURCV"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which stablecoin is integrated with Pendle for yield tokenization?",
+    "correct": "USDf/sUSDf (Falcon Finance via PT-sUSDf)",
+    "wrongs": [
+      "USDC",
+      "DAI",
+      "GHO"
+    ],
+    "explanation": "Falcon Finance's PT-sUSDf (Pendle Principal Token) is listed on Morpho.",
+    "coin": "USDf"
+  },
+  {
+    "type": "Liquidity",
+    "text": "What is Llamalend?",
+    "correct": "Curve's lending platform where crvUSD is used",
+    "wrongs": [
+      "A competing stablecoin",
+      "A restaking protocol",
+      "An oracle service"
+    ],
+    "explanation": "Llamalend is Curve Finance's lending platform, complementing crvUSD.",
+    "coin": "crvUSD"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which stablecoin was the first to be supported on Morpho's lending markets?",
+    "correct": "PYUSD",
+    "wrongs": [
+      "USDC",
+      "DAI",
+      "USDT"
+    ],
+    "explanation": "Morpho was the first lending platform to support PYUSD.",
+    "coin": "PYUSD"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Where does USR have ~32% allocation in some vaults?",
+    "correct": "Morpho",
+    "wrongs": [
+      "Aave",
+      "Compound",
+      "Euler"
+    ],
+    "explanation": "USR comprises about 32% of allocation in some Morpho vaults.",
+    "coin": "USR"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Which stablecoin launched a 'World Liberty Markets' lending platform?",
+    "correct": "USD1 (on Dolomite)",
+    "wrongs": [
+      "USDC (on Morpho)",
+      "GHO (on Aave)",
+      "USDe (on Ethena)"
+    ],
+    "explanation": "World Liberty Financial launched World Liberty Markets on Dolomite infrastructure for USD1.",
+    "coin": "USD1"
+  },
+  {
+    "type": "Liquidity",
+    "text": "Flux Finance is a liquidity venue for which stablecoin?",
+    "correct": "USDY (Ondo Finance)",
+    "wrongs": [
+      "USDM",
+      "USDC",
+      "GHO"
+    ],
+    "explanation": "Flux Finance is an Ondo-associated lending platform where USDY is used.",
+    "coin": "USDY"
+  }
 ]
